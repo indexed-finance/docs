@@ -9,7 +9,7 @@ This contract has been designed in tandem with the pool controller, and some of 
 Pools are deployed as delegatecall proxies which point to the implementation address, which is the deployed pool contract. Rather than a constructor, the pool exposes an `initialize` function which must be called in the same transaction as the proxy deployment (otherwise anyone will be able to take control of the pool).
 
 ## Tokens
-Every token $t$ in the pool has an associated weight $W_t$ and balance $B_t$. A token's normalized weight represents the total value of the pool which is held in the balance of that token, where the normalized weight is the token's weight divided by the total weight. These two values are used to price swaps between tokens - the spot price between token $i$ and token $o$ is given by the formula:
+Every token $$t$$ in the pool has an associated weight $$W_t$$ and balance $$B_t$$. A token's normalized weight represents the total value of the pool which is held in the balance of that token, where the normalized weight is the token's weight divided by the total weight. These two values are used to price swaps between tokens - the spot price between token $$i$$ and token $$o$$ is given by the formula:
 
 $$
 SP_{i}^{o} = \frac{B_i/W_i}{B_o/W_o} \cdot \frac{1}{1-fee}
@@ -25,13 +25,13 @@ In order to rebalance through internal swaps, Indexed uses a *desired weight* pa
 
 This assumes that the balance in each asset on the pool is close to the target balance. The target balance for a token is the amount of tokens worth the weighted value of the pool; e.g. if a token has weight 2 out of a total of 10, the target balance is the number of tokens worth 20% of the pool's portfolio. In a rational market, the real balance of a token should always be within `swapFee` of the target balance, as there would be an arbitrage opportunity whenever it moves outside that.
 
-As swaps are executed and LP tokens are minted and burned, inbound tokens with desired weight increases (desired > real) and outbound tokens with desired weight decreases (real > desired) automatically adjust their weights at a maximum frequency of once per hour - the real weight will move towards the desired weight with a maximum absolute difference of $\frac{weight \cdot fee}{2}$. By adjusting weights by half the swap fee (proportional to their existing weights), we create small arbitrage opportunities which move tokens toward their target balances, thus rebalancing the pool.
+As swaps are executed and LP tokens are minted and burned, inbound tokens with desired weight increases (desired > real) and outbound tokens with desired weight decreases (real > desired) automatically adjust their weights at a maximum frequency of once per hour - the real weight will move towards the desired weight with a maximum absolute difference of $$\frac{weight \cdot fee}{2}$$. By adjusting weights by half the swap fee (proportional to their existing weights), we create small arbitrage opportunities which move tokens toward their target balances, thus rebalancing the pool.
 
 > Note: The one exception to the previous rule is the `exitPool` function, which sends out some amount of every initialized token. In order to minimize gas expenditure, this function does not adjust the weights of outbound tokens.
 
 Arbitragers can identify when one token is set for an increase and another is set for a decrease, execute a small swap between them to trigger the weight adjustments, then execute a trade that brings the token's spot prices in line with their external prices. The first step creates a spot price difference roughly equal to the swap fee, so if the tokens were already favorably priced relative to each other but unprofitable due to the swap fee, the new price including the swap fee will be favorable to the trader.
 
-The amount of token $i$ ($A_i$) needed to trade against token $o$ such that the spot price changes from $SP_{i}^{o}$ to $SP_{i}^{′o}$ is given by the [in-given-price](https://balancer.finance/whitepaper/#in-given-price) formula from the Balancer whitepaper:
+The amount of token $$i$$ ($$A_i$$) needed to trade against token $$o$$ such that the spot price changes from $$SP_{i}^{o}$$ to $$SP_{i}^{′o}$$ is given by the [in-given-price](https://balancer.finance/whitepaper/#in-given-price) formula from the Balancer whitepaper:
 
 $$
 A_i = B_i \cdot \left(\left(\frac{SP_{i}^{′o}}{SP_{i}^{o}}\right)^{\frac{W_o}{W_o + W_i}} - 1\right)

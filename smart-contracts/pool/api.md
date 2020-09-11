@@ -288,7 +288,7 @@ The amount of pool tokens to mint can not be 0.
 
 If any input token is not initialized, its balance and weight will be replaced with the token's minimum balance and `MIN_WEIGHT`, respectively, when calculating the input token amount.
 
-If any input token has a higher desired weight than its real weight and has not been adjusted in the last hour, it will move towards the real weight with a maximum difference of $\frac{weight \cdot fee}{2}$. If the token is not initialized and has still not met its minimum balance after the swap, its weight will not be adjusted.
+If any input token has a higher desired weight than its real weight and has not been adjusted in the last hour, it will move towards the real weight with a maximum difference of $$\frac{weight \cdot fee}{2}$$. If the token is not initialized and has still not met its minimum balance after the swap, its weight will not be adjusted.
 
 If any uninitialized token reaches its minimum balance, its minimum balance will be cleared, the token will be marked as initialized and its storage record will be assigned the minimum weight.
 
@@ -316,7 +316,7 @@ The pool implicitly swaps `(1- weightTokenIn) * tokenAmountIn` to the other unde
 
 If `tokenIn` is not initialized, its balance and weight will be replaced with `_minimumBalances[tokenIn]` and `MIN_WEIGHT`, respectively, when calculating the output token amount. If `tokenAmountIn` brings the real balance above the minimum balance, the minimum balance will be cleared, `tokenIn` will be marked as initialized and its storage record will be assigned the minimum weight.
 
-If `tokenIn` has a higher desired weight than its real weight and has not been adjusted in the last hour, it will move towards the real weight with a maximum difference of $\frac{weight \cdot fee}{2}$. If `tokenIn` is not initialized and has still not met its minimum balance after the swap, its weight will not be adjusted.
+If `tokenIn` has a higher desired weight than its real weight and has not been adjusted in the last hour, it will move towards the real weight with a maximum difference of $$\frac{weight \cdot fee}{2}$$. If `tokenIn` is not initialized and has still not met its minimum balance after the swap, its weight will not be adjusted.
 
 ## `joinswapPoolAmountOut`
 
@@ -343,7 +343,7 @@ The pool implicitly swaps `(1- weightTokenIn) * tokenAmountIn` to the other unde
 
 If `tokenIn` is not initialized, its balance and weight will be replaced with `_minimumBalances[tokenIn]` and `MIN_WEIGHT`, respectively, when calculating the input token amount. If `tokenAmountIn` brings the real balance above the minimum balance, the minimum balance will be cleared, `tokenIn` will be marked as initialized and its storage record will be assigned the minimum weight.
 
-If `tokenIn` has a higher desired weight than its real weight and has not been adjusted in the last hour, it will move towards the real weight with a maximum difference of $\frac{weight \cdot fee}{2}$. If `tokenIn` is not initialized and has still not met its minimum balance after the swap, its weight will not be adjusted.
+If `tokenIn` has a higher desired weight than its real weight and has not been adjusted in the last hour, it will move towards the real weight with a maximum difference of $$\frac{weight \cdot fee}{2}$$. If `tokenIn` is not initialized and has still not met its minimum balance after the swap, its weight will not be adjusted.
 
 
 ## `exitPool`
@@ -393,7 +393,7 @@ The pool implicitly burns the tokens for all underlying tokens and swaps them to
 
 `tokenAmountOut` can not exceed 1/3 of the current balance of `tokenOut`.
 
-If `tokenOut` is due for a weight decrease, its real weight will move toward the desired weight with a maximum absolute difference of $\frac{weight \cdot fee}{2}$.
+If `tokenOut` is due for a weight decrease, its real weight will move toward the desired weight with a maximum absolute difference of $$\frac{weight \cdot fee}{2}$$.
 
 An exit fee is charged if the pool has an exit fee value set. The exit fee is taken from the input pool tokens and transferred to the pool controller prior to calculating the ratio of underlying balances to give the caller.
 
@@ -420,7 +420,7 @@ The pool implicitly burns the tokens for all underlying tokens and swaps them to
 
 `tokenAmountOut` can not exceed 1/3 of the current balance of `tokenOut`.
 
-If `tokenOut` is due for a weight decrease, its real weight will move toward the desired weight with a maximum absolute difference of $\frac{weight \cdot fee}{2}$.
+If `tokenOut` is due for a weight decrease, its real weight will move toward the desired weight with a maximum absolute difference of $$\frac{weight \cdot fee}{2}$$.
 
 An exit fee is charged if the pool has an exit fee value set. The exit fee is taken from the input pool tokens and transferred to the pool controller prior to calculating the ratio of underlying balances to give the caller.
 
@@ -456,7 +456,7 @@ Trades exactly `tokenAmountIn` of `tokenIn` for at least `minAmountOut` of `toke
 
 If `tokenIn` is not initialized, its balance and weight will be replaced with `_minimumBalances[tokenIn]` and `MIN_WEIGHT`, respectively, when calculating the output amount and resulting spot price. If `tokenAmountIn` brings the real balance above the minimum balance, `tokenIn` will be marked as initialized and its record will be assigned the minimum weight.
 
-If `tokenIn` has a higher desired weight than its real weight and has not been updated in the last hour, or `tokenOut` has a lower desired weight than its real weight and has not been updated in the last hour, their weights will move up or down (respectively) towards their desired weights by a maximum of $\frac{weight \cdot fee}{2}$. If `tokenIn` is not initialized and has still not met its minimum balance after the swap, its weight will not be adjusted.
+If `tokenIn` has a higher desired weight than its real weight and has not been updated in the last hour, or `tokenOut` has a lower desired weight than its real weight and has not been updated in the last hour, their weights will move up or down (respectively) towards their desired weights by a maximum of $$\frac{weight \cdot fee}{2}$$. If `tokenIn` is not initialized and has still not met its minimum balance after the swap, its weight will not be adjusted.
 
 ## `swapExactAmountOut`
 
@@ -483,4 +483,4 @@ Trades at most `maxAmountIn` of `tokenIn` for exactly `tokenAmountOut` of `token
 
 If `tokenIn` is not initialized, its balance and weight will be replaced with `_minimumBalances[tokenIn]` and `MIN_WEIGHT`, respectively, when calculating the output amount and resulting spot price. If `tokenAmountIn` brings the real balance above the minimum balance, `tokenIn` will be marked as initialized and its record will be assigned the minimum weight.
 
-If `tokenIn` has a higher desired weight than its real weight and has not been updated in the last hour, or `tokenOut` has a lower desired weight than its real weight and has not been updated in the last hour, their weights will move up or down (respectively) towards their desired weights by a maximum of $\frac{weight \cdot fee}{2}$. If `tokenIn` is not initialized and has still not met its minimum balance after the swap, its weight will not be adjusted.
+If `tokenIn` has a higher desired weight than its real weight and has not been updated in the last hour, or `tokenOut` has a lower desired weight than its real weight and has not been updated in the last hour, their weights will move up or down (respectively) towards their desired weights by a maximum of $$\frac{weight \cdot fee}{2}$$. If `tokenIn` is not initialized and has still not met its minimum balance after the swap, its weight will not be adjusted.
