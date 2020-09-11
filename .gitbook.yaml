@@ -1,6 +1,4 @@
 root: ./
-plugins:
-  - mathjax
 structure:
   readme: index.md
   summary: summary.md
