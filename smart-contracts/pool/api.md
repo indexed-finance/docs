@@ -484,3 +484,48 @@ Trades at most `maxAmountIn` of `tokenIn` for exactly `tokenAmountOut` of `token
 If `tokenIn` is not initialized, its balance and weight will be replaced with `_minimumBalances[tokenIn]` and `MIN_WEIGHT`, respectively, when calculating the output amount and resulting spot price. If `tokenAmountIn` brings the real balance above the minimum balance, `tokenIn` will be marked as initialized and its record will be assigned the minimum weight.
 
 If `tokenIn` has a higher desired weight than its real weight and has not been updated in the last hour, or `tokenOut` has a lower desired weight than its real weight and has not been updated in the last hour, their weights will move up or down (respectively) towards their desired weights by a maximum of $$\frac{weight \cdot fee}{2}$$. If `tokenIn` is not initialized and has still not met its minimum balance after the swap, its weight will not be adjusted.
+
+# Other
+
+## `gulp`
+
+```
+function gulp(address token)
+```
+
+**Summary**
+
+Absorb any tokens which have been sent to the pool that are not represented in the balance.
+
+**Notes**
+
+If `token` is not bound, any tokens sent to the pool will be sent to the pool controller.
+
+If `token` is bound, the token record's balance will be set to the current balance on the ERC20 token.
+
+If `token` is not initialized and the updated balance is greater than its minimum balance, the token's weight will be set, its minimum balance will be deleted and it will be marked as initialized.
+
+## `flashBorrow`
+
+```
+function flashBorrow(
+  IFlashLoanRecipient recipient,
+  address token,
+  uint256 amount,
+  bytes calldata data
+)
+```
+
+**Summary**
+
+Sends `amount` of `token` to `recipient`, then calls `recipient.receiveFlashLoan(data)`. If `amount` of `token` is not repaid with `swapFee * amount` interest, the transaction will revert.
+
+**Notes**
+
+`token` must be bound to the pool.
+
+The pool must have at least `amount` of token.
+
+This function uses a reentrancy lock, so the flash loan recipient can not interact with the pool.
+
+If `token` is not initialized and the repayment with the fee brings the token above its minimum balance, the minimum balance will be deleted and the token will be marked as initialized.
