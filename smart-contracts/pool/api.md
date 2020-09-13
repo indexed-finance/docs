@@ -522,6 +522,8 @@ Sends `amount` of `token` to `recipient`, then calls `recipient.receiveFlashLoan
 
 **Notes**
 
+`recipient` must implement the `IFlashLoanRecipient` interface.
+
 `token` must be bound to the pool.
 
 The pool must have at least `amount` of token.
