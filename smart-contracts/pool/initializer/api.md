@@ -34,7 +34,7 @@ The desired amounts of all tokens must be 0.
 function claimTokens()
 ```
 
-Claims the tokens owed to `account` based on their proportion of the total credits.
+Claims the tokens owed to `msg.sender` based on their proportion of the total credits.
 
 ## `claimTokens` 
 
@@ -108,6 +108,35 @@ function updatePrices()
 ```
 
 Updates the prices of all desired tokens on the price oracle.
+
+# Status Queries
+
+## `isFinished`
+
+```
+function isFinished() returns (bool)
+```
+
+Returns whether the pool has been initialized.
+
+# Credit Queries
+
+## `getTotalCredit`
+
+```
+function getTotalCredit() returns (uint256)
+```
+
+Returns the total value credited for token contributions.
+
+
+## `getCreditOf`
+
+```
+function getCreditOf(address account) returns (uint256)
+```
+
+Returns the amount of credit owed to `account`.
 
 # Token Queries
 
