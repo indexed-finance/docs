@@ -1,23 +1,5 @@
 ## `MarketCapSqrtController`
 
-
-
-This contract implements the market cap square root index management strategy.
-
-Categories are periodically sorted, ranking their tokens in descending order by market cap.
-
-Index pools have a defined size which is used to select the top tokens from the pool's category.
-
-Every 2 weeks, pools are either re-weighed or re-indexed.
-
-They are re-indexed once for every three re-weighs.
-
-Re-indexing involves selecting the top tokens from the pool's category and weighing them by the square root of their market caps.
-
-Re-weighing involves weighing the tokens which are already indexed by the pool by the square root of their market caps.
-
-When a pool is re-weighed, only the tokens with a desired weight above 0 are included.
-
 ## `constructor` 
 
 ```
@@ -47,6 +29,35 @@ After deployment this will likely never change, but it is useful
 to have some small window during which things can be initialized
 before governance is fully in place.
 
+## `setDefaultSellerPremium` 
+
+```
+function setDefaultSellerPremium(uint8 _defaultSellerPremium)
+```
+
+
+
+Sets the default premium rate for token seller contracts.
+
+## `emergencyExecuteSwapTokensForExactTokens` 
+
+```
+function emergencyExecuteSwapTokensForExactTokens(
+  address sellerAddress,
+  address tokenIn,
+  address tokenOut,
+  uint256 maxAmountIn,
+  uint256 amountOut,
+  address[] path
+)
+```
+
+Emergency function that allows the dao to force a token sale
+through UniSwap. This exists in case of an emergency which demands
+immediate removal of a token.
+
+# Pool Deployment
+
 ## `prepareIndexPool` 
 
 ```
@@ -75,11 +86,37 @@ function finishPreparedIndexPool(
 )
 ```
 
-
-
 Initializes a pool which has been deployed but not initialized
 and transfers the underlying tokens from the initialization pool to
 the actual pool.
+
+# Pool Management
+
+## `updateSellerPremiumToDefault` 
+
+```
+function updateSellerPremiumToDefault(
+  address sellerAddress
+)
+```
+
+
+
+Update the premium rate on `sellerAddress` with the current
+default rate.
+
+## `updateSellerPremiumToDefault` 
+
+```
+function updateSellerPremiumToDefault(
+  address[] sellerAddresses
+)
+```
+
+
+
+Update the premium rate on each unbound token seller in
+`sellerAddresses` with the current default rate.
 
 ## `setSwapFee` 
 
@@ -208,6 +245,14 @@ external prices for people to trade it in.
 
 # Pool Queries
 
+# `defaultSellerPremium`
+
+```
+function defaultSellerPremium() returns (uint256 defaultSellerPremium)
+```
+
+Default premium percent for index pool's unbound token sellers.
+
 ## `computeInitializerAddress` 
 
 ```
@@ -275,6 +320,14 @@ function computeAverageMarketCaps(
 Returns the average market cap for each token.
 
 # Category Queries
+
+## `categoryIndex`
+
+```
+function categoryIndex() returns (uint256 categoryID)
+```
+
+Number of categories in the oracle.
 
 ## `hasCategory` 
 
