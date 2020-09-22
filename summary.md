@@ -1,6 +1,9 @@
 # Table of Contents
 
+## Protocol
+
 * [Home](protocol/index.md)
+* [Pools](protocol/pools.md)
 
 ## Smart Contracts
 
