@@ -8,8 +8,8 @@
 ## Smart Contracts
 
 * [IPool.sol](smart-contracts/pool.md)
-* [PoolInitializer.sol](smart-contracts/pool/initializer.md)
-* [UnboundTokenSeller.sol](smart-contracts/pool/token-seller.md)
+* [PoolInitializer.sol](smart-contracts/initializer.md)
+* [UnboundTokenSeller.sol](smart-contracts/token-seller.md)
 * [UniSwapV2PriceOracle.sol](smart-contracts/oracle.md)
 * [MCapSqrt Controller](smart-contracts/controller.md)
 * [Proxies](smart-contracts/proxies/index.md)
