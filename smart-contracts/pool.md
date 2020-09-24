@@ -1,3 +1,5 @@
+# `IPool`
+
 # Configuration Queries
 
 ## `isPublicSwap`
@@ -177,26 +179,60 @@ Calculate the amount of `tokenOut` which can be received for `tokenAmountIn` of 
 
 # Control Actions
 
-## `initialize`
+## `configure`
 
 ```
-function initialize(
+function configure(
   address controller,
   string calldata name,
-  string calldata symbol,
-  address[] calldata tokens,
-  uint256[] calldata balances,
-  uint96[] calldata denorms
+  string calldata symbol
 )
 ```
 
 **Summary**
 
-Sets up the initial assets for the pool, assigns the controller address and sets the name and symbol for the pool token. 
+Sets the controller address and the token name & symbol. This saves on storage costs for multi-step pool deployment.
 
 **Notes**
 
-Each token added in this function must have a corresponding weight and initial balance. The caller (the pool controller contract) must have approved the pool to transfer the provided balance, and the provided balance should be worth the token's proportional weight of the pool value.
+The stored controller address must be zero.
+
+## `initialize`
+
+```
+function initialize(
+  address[] tokens,
+  uint256[] balances,
+  uint96[] denorms,
+  address tokenProvider,
+  address unbindHandler
+)
+```
+
+**Summary**
+
+Sets up the initial assets for the pool.
+
+**Notes**
+
+Each token added in this function must have a corresponding weight and initial balance. 
+
+`tokenProvider` must have approved the pool to transfer the provided balances of each token.
+
+The provided balance of each token should be worth the token's proportional weight of the pool value.
+
+## `setSwapFee`
+```
+function setSwapFee(uint256 swapFee)
+```
+
+**Summary**
+
+Sets the swap fee.
+
+**Notes**
+
+The swap fee must be between 0.0001% and 10%
 
 ## `reweighTokens`
 
@@ -286,11 +322,11 @@ The amount of underlying tokens to transfer for each token can not:
 
 The amount of pool tokens to mint can not be 0.
 
-If any input token is not initialized, its balance and weight will be replaced with the token's minimum balance and `MIN_WEIGHT`, respectively, when calculating the input token amount.
+If any input token is not initialized, its balance will be replaced with the token's minimum balance and its weight will be replaced with the minimum weight [plus a premium determined by the token's distance from the minimum balance](#weight-for-price-calculations). This is only for the purpose of price calculations and is not written to storage.
+
+If any input token is brought above its minimum balance, it will be marked as initialized and its record will be assigned the minimum weight plus a [factor proportional to the amount by which the minimum balance was exceeded](#weight-when-token-is-initialized).
 
 If any input token has a higher desired weight than its real weight and has not been adjusted in the last hour, it will move towards the real weight with a maximum difference of $$\frac{weight \cdot fee}{2}$$. If the token is not initialized and has still not met its minimum balance after the swap, its weight will not be adjusted.
-
-If any uninitialized token reaches its minimum balance, its minimum balance will be cleared, the token will be marked as initialized and its storage record will be assigned the minimum weight.
 
 ## `joinswapExternAmountIn`
 
@@ -314,7 +350,9 @@ The pool implicitly swaps `(1- weightTokenIn) * tokenAmountIn` to the other unde
 - be 0
 - exceed 1/2 the current balance (or minimum balance in the case of uninitialized tokens) of `tokenIn`
 
-If `tokenIn` is not initialized, its balance and weight will be replaced with `_minimumBalances[tokenIn]` and `MIN_WEIGHT`, respectively, when calculating the output token amount. If `tokenAmountIn` brings the real balance above the minimum balance, the minimum balance will be cleared, `tokenIn` will be marked as initialized and its storage record will be assigned the minimum weight.
+If `tokenIn` is not initialized, its balance will be replaced with `_minimumBalances[tokenIn]` and its weight will be replaced with the minimum weight [plus a premium determined by the token's distance from the minimum balance](#weight-for-price-calculations). This is only for the purpose of price calculations and is not written to storage.
+
+If `tokenAmountIn` brings the real balance above the minimum balance, `tokenIn` will be marked as initialized and its record will be assigned the minimum weight plus a [factor proportional to the amount by which the minimum balance was exceeded](#weight-when-token-is-initialized).
 
 If `tokenIn` has a higher desired weight than its real weight and has not been adjusted in the last hour, it will move towards the real weight with a maximum difference of $$\frac{weight \cdot fee}{2}$$. If `tokenIn` is not initialized and has still not met its minimum balance after the swap, its weight will not be adjusted.
 
@@ -341,7 +379,9 @@ The pool implicitly swaps `(1- weightTokenIn) * tokenAmountIn` to the other unde
 - be 0
 - exceed 1/2 the current balance (or minimum balance in the case of uninitialized tokens) of `tokenIn`
 
-If `tokenIn` is not initialized, its balance and weight will be replaced with `_minimumBalances[tokenIn]` and `MIN_WEIGHT`, respectively, when calculating the input token amount. If `tokenAmountIn` brings the real balance above the minimum balance, the minimum balance will be cleared, `tokenIn` will be marked as initialized and its storage record will be assigned the minimum weight.
+If `tokenIn` is not initialized, its balance will be replaced with `_minimumBalances[tokenIn]` and its weight will be replaced with the minimum weight [plus a premium determined by the token's distance from the minimum balance](#weight-for-price-calculations). This is only for the purpose of price calculations and is not written to storage.
+
+If `tokenAmountIn` brings the real balance above the minimum balance, `tokenIn` will be marked as initialized and its record will be assigned the minimum weight plus a [factor proportional to the amount by which the minimum balance was exceeded](#weight-when-token-is-initialized).
 
 If `tokenIn` has a higher desired weight than its real weight and has not been adjusted in the last hour, it will move towards the real weight with a maximum difference of $$\frac{weight \cdot fee}{2}$$. If `tokenIn` is not initialized and has still not met its minimum balance after the swap, its weight will not be adjusted.
 
@@ -454,7 +494,9 @@ Trades exactly `tokenAmountIn` of `tokenIn` for at least `minAmountOut` of `toke
 
 `tokenOut` must be initialized.
 
-If `tokenIn` is not initialized, its balance and weight will be replaced with `_minimumBalances[tokenIn]` and `MIN_WEIGHT`, respectively, when calculating the output amount and resulting spot price. If `tokenAmountIn` brings the real balance above the minimum balance, `tokenIn` will be marked as initialized and its record will be assigned the minimum weight.
+If `tokenIn` is not initialized, its balance will be replaced with `_minimumBalances[tokenIn]` and its weight will be replaced with the minimum weight [plus a premium determined by the token's distance from the minimum balance](#weight-for-price-calculations). This is only for the purpose of price calculations and is not written to storage.
+
+If `tokenAmountIn` brings the real balance above the minimum balance, `tokenIn` will be marked as initialized and its record will be assigned the minimum weight plus a [factor proportional to the amount by which the minimum balance was exceeded](#weight-when-token-is-initialized).
 
 If `tokenIn` has a higher desired weight than its real weight and has not been updated in the last hour, or `tokenOut` has a lower desired weight than its real weight and has not been updated in the last hour, their weights will move up or down (respectively) towards their desired weights by a maximum of $$\frac{weight \cdot fee}{2}$$. If `tokenIn` is not initialized and has still not met its minimum balance after the swap, its weight will not be adjusted.
 
@@ -481,7 +523,9 @@ Trades at most `maxAmountIn` of `tokenIn` for exactly `tokenAmountOut` of `token
 
 `tokenOut` must be initialized.
 
-If `tokenIn` is not initialized, its balance and weight will be replaced with `_minimumBalances[tokenIn]` and `MIN_WEIGHT`, respectively, when calculating the output amount and resulting spot price. If `tokenAmountIn` brings the real balance above the minimum balance, `tokenIn` will be marked as initialized and its record will be assigned the minimum weight.
+If `tokenIn` is not initialized, its balance will be replaced with `_minimumBalances[tokenIn]` and its weight will be replaced with the minimum weight [plus a premium determined by the token's distance from the minimum balance](#weight-for-price-calculations). This is only for the purpose of price calculations and is not written to storage.
+
+If `tokenAmountIn` brings the real balance above the minimum balance, `tokenIn` will be marked as initialized and its record will be assigned the minimum weight plus a [factor proportional to the amount by which the minimum balance was exceeded](#weight-when-token-is-initialized).
 
 If `tokenIn` has a higher desired weight than its real weight and has not been updated in the last hour, or `tokenOut` has a lower desired weight than its real weight and has not been updated in the last hour, their weights will move up or down (respectively) towards their desired weights by a maximum of $$\frac{weight \cdot fee}{2}$$. If `tokenIn` is not initialized and has still not met its minimum balance after the swap, its weight will not be adjusted.
 
@@ -499,7 +543,7 @@ Absorb any tokens which have been sent to the pool that are not represented in t
 
 **Notes**
 
-If `token` is not bound, any tokens sent to the pool will be sent to the pool controller.
+If `token` is not bound, any tokens sent to the pool will be sent to the pool's `unboundTokenHandler`.
 
 If `token` is bound, the token record's balance will be set to the current balance on the ERC20 token.
 
@@ -531,3 +575,18 @@ The pool must have at least `amount` of token.
 This function uses a reentrancy lock, so the flash loan recipient can not interact with the pool.
 
 If `token` is not initialized and the repayment with the fee brings the token above its minimum balance, the minimum balance will be deleted and the token will be marked as initialized.
+
+# Uninitialized Weight Calculations
+
+Formulae for calculating weights of uninitialized tokens.
+
+## Weight for price calculations
+
+If a token is uninitialized, its weight used for swaps will be set to the minimum weight plus a premium determined by the distance between its real and minimum balances. The premium begins at 10% and decreases linearly as the token gets closer to its minimum balance. The weight used for price calculations with an uninitialized token ($$W_t^u$$) is calculated with:
+$$W_t^u = W_{min} \cdot \left(1 + \frac{B_{t}^{min} - B_{t}}{10 \cdot B_{t}^{min}}\right)$$
+
+## Weight when token is initialized
+
+When a token reaches its minimum balance, it is marked as ready and its weight is set. Unlike other weight changes which modify weights by a factor of $$\frac{fee}{2}$$, when a token is becoming initialized its weight will be set to the minimum weight plus a factor proportional to the amount it exceeded the minimum balance. The weight is set to:
+
+$$W_{min} \cdot \frac{1 + \left(B_{t} - B_{t}^{min}\right)}{B_{t}^{min}}$$ where $$B_{t}$$ is the pool's balance in that token including the amount gained in the transaction.
