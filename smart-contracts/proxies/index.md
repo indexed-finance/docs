@@ -1,4 +1,4 @@
-# Proxies
+# [@indexed-finance/proxies](https://github.com/indexed-finance/proxies)
 
 Indexed uses proxies to instantiate many clones of specific contract templates. Index pools and their initialization contracts are deployed as proxies, which greatly reduces gas costs and allows any discovered bugs to be patched without any migration procedure.
 
