@@ -19,7 +19,7 @@
 * [UnboundTokenSeller.sol](smart-contracts/token-seller.md)
 * [UniSwapV2PriceOracle.sol](smart-contracts/oracle.md)
 * [MarketCapSqrtController.sol](smart-contracts/controller.md)
-* [Proxies](smart-contracts/proxies/proxies.md)
+* [@indexed-finance/proxies](smart-contracts/proxies/proxies.md)
   * [DelegateCallProxyManager.sol](smart-contracts/proxies/DelegateCallProxyManager.md)
   * [DelegateCallProxyManyToOne.sol](smart-contracts/proxies/DelegateCallProxyManyToOne.md)
   * [DelegateCallProxyOneToOne.sol](smart-contracts/proxies/DelegateCallProxyOneToOne.md)
