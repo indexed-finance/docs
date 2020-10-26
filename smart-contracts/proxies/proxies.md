@@ -1,5 +1,9 @@
 # [@indexed-finance/proxies](https://github.com/indexed-finance/proxies)
 
+[Github](https://github.com/indexed-finance/proxies)
+
+[NPM](https://www.npmjs.com/package/@indexed-finance/proxies)
+
 Indexed uses proxies to instantiate many clones of specific contract templates. Index pools and their initialization contracts are deployed as proxies, which greatly reduces gas costs and allows any discovered bugs to be patched without any migration procedure.
 
 A Proxy Manager contract controls the deployment and upgrading of proxies and their implementations. The proxy manager is controlled by the governance contract, which can add new contract templates that proxies can use, deploy singleton proxies, modify the implementation addresses of existing proxies, and approve specific addresses to deploy copies of an existing template.
