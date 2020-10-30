@@ -25,6 +25,7 @@
   * [DelegateCallProxyOneToOne.sol](smart-contracts/proxies/DelegateCallProxyOneToOne.md)
   * [ManyToOneImplementationHolder.sol](smart-contracts/proxies/ManyToOneImplementationHolder.md)
   * [SaltyLib.sol](smart-contracts/proxies/SaltyLib.md)
+* [@indexed-finance/uniswap-v2-oracle](smart-contracts/oracle/IndexedUniswapV2Oracle.md)
 * [Interfaces](smart-contracts/interfaces/index.md)
   * [IBPool.sol](smart-contracts/interfaces/IBPool.md)
   * [IFlashLoanRecipient.sol](smart-contracts/interfaces/IFlashLoanRecipient.md)
