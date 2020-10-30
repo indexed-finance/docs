@@ -7,9 +7,9 @@ queries.
 Every set of 256 keys in the value map is assigned a single index which
 records set values as bits, where 1 indicates the map has a value at a given
 key and 0 indicates it does not.
+
 The 'value map' is the map which stores the values with sequential keys.
-The 'key index' is the map which records the indices for every 256 keys
-in the value map.
+
 The 'key index' is the mapping which stores the indices for each 256 values
 in the map. For example, the key '256' in the value map would have a key
 in the key index of `1`, where the 0th bit in the index records whether a
