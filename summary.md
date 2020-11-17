@@ -4,13 +4,11 @@
 
 * [Home](protocol/index.md)
 * [Terminology](protocol/terminology.md)
-* [Price Oracles](protocol/price-oracles.md)
-* [MCapSqrt Strategy](protocol/mcap-strategy.md)
-* [Pools](protocol/pools.md)
+* [Index Controller](protocol/mcap-strategy.md)
+* [Index Pools](protocol/pools.md)
 * [Rebalancing](protocol/rebalancing/index.md)
   * [Bootstrapping new tokens](protocol/rebalancing/adding-tokens.md)
   * [Removing tokens](protocol/rebalancing/removing-tokens.md)
-* [Limitations](protocol/limitations.md)
 
 ## Smart Contracts
 
