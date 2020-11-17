@@ -15,7 +15,6 @@
 * [IPool.sol](smart-contracts/pool.md)
 * [PoolInitializer.sol](smart-contracts/initializer.md)
 * [UnboundTokenSeller.sol](smart-contracts/token-seller.md)
-* [UniSwapV2PriceOracle.sol](smart-contracts/oracle.md)
 * [MarketCapSqrtController.sol](smart-contracts/controller.md)
 * [@indexed-finance/proxies](smart-contracts/proxies/proxies.md)
   * [DelegateCallProxyManager.sol](smart-contracts/proxies/DelegateCallProxyManager.md)
