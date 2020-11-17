@@ -2,7 +2,7 @@
 
 ## Weight Adjustment
 
-In order to rebalance through internal swaps, Indexed uses a *desired weight* ($$D_t$$) parameter which specifies the target weight for an asset. If a desired weight is higher than the actual weight, the pool should increase its balance in that token. If the desired weight is lower than the actual weight, the pool should decrease its balance in that token.
+In order to rebalance through internal swaps, Indexed uses a *desired weight* ($$D_t$$) parameter which defines the target weight for an asset. If a desired weight is higher than the actual weight, the pool should increase its balance in that token. If the desired weight is lower than the actual weight, the pool should decrease its balance in that token.
 
 Each pool has a minimum update delay, which by default is 1 hour, and a weight change factor, which by default is 1%. 
 
