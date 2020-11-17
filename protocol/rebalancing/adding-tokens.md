@@ -2,7 +2,7 @@
 
 When the pool is deployed, every token in the initial asset pool must be added with sufficient tokens to cover its weight. The balance and weight for a token are used to price that token relative to the other assets in a pool, so it is important that token balances be representative of their weight.
 
-If we simply add a new token to the pool with an arbitrary weight and no balance, it will eventually reach that weight as a result of arbitrage. However, this would obviously cause massive losses for liquidity providers who are paying exorbitant rates for the new token. Instead, we added a couple of changes to the pool contract so that tokens with no balance can be priced into swaps and joins.
+If we simply add a new token to the pool with an arbitrary weight and no balance, it will eventually reach that weight as a result of arbitrage. However, this would obviously cause massive losses for liquidity providers who are paying exorbitant rates for the new token. Instead, we added a couple of changes to the Balancer pool contract so that tokens with no balance can be priced into swaps and joins.
 
 ## False Weight & Balance
 
@@ -24,6 +24,6 @@ $$W_t^u = W_{min} \cdot \left(1 + \frac{B_{t}^{min} - B_{t}}{10 \cdot B_{t}^{min
 
 ## Initialization
 
-When a token reaches its minimum balance, it is marked as ready and its weight is set. Unlike other weight changes which modify weights by `weight*swapFee / 2`, when a token is becoming initialized its weight will be set to the minimum weight plus a factor proportional to the amount it exceeded the minimum balance. The reason for this is that tokens with low weights are subject to larger price fluctuations, and it is possible to swap in up to 50% of the current balance the pool holds in some token. If the token's balance is substantially higher than its weight, it will be priced lower than it should and people will have an incentive to buy it from the pool, even though we are looking to increase the pool balance of that token.
+When a token reaches its minimum balance, it is marked as ready and its weight is set. Unlike other weight changes which modify weights by 1% per hour, when a token is initialized its weight will be set to the minimum weight plus a factor proportional to the amount it exceeded the minimum balance. The reason for this is that tokens with low weights are subject to larger price fluctuations, and it is possible to swap in up to 50% of the current balance the pool holds in some token. If the token's balance is substantially higher than its weighted proportion of the pool value, it will be priced lower than it should and people will have an incentive to buy it from the pool, even though we are looking to increase the pool balance of that token.
 
 The weight factor is: $$\frac{W_{min} \cdot \left( B_{t} - B_{t}^{min}\right)}{B_{t}^{min}}$$ so when the token is initialized, its weight is set to $$W_{min} \cdot \frac{1 + \left(B_{t} - B_{t}^{min}\right)}{B_{t}^{min}}$$ where $$B_{t}$$ is the pool's balance in that token including the amount gained in the transaction.
