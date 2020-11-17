@@ -4,7 +4,7 @@
 
 * [Home](protocol/index.md)
 * [Terminology](protocol/terminology.md)
-* [Index Controller](protocol/mcap-strategy.md)
+* [Index Controller](protocol/index-controller.md)
 * [Index Pools](protocol/pools.md)
 * [Rebalancing](protocol/rebalancing/index.md)
   * [Bootstrapping new tokens](protocol/rebalancing/adding-tokens.md)
