@@ -11,7 +11,7 @@ Re-indexing involves selecting the top tokens from the pool's category and weigh
 ## `constructor` 
 
 ```
-function constructor(
+constructor(
   UniSwapV2PriceOracle oracle,
   address ndx,
   PoolFactory factory,
