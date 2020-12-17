@@ -5,17 +5,10 @@ The index pool controller is a contract which tracks token values and sets portf
 ## Category Token Selection
 The selection of tokens in the first two index categories was somewhat subjective and was simply intended to capture the top tokens in their respective market sectors. In the future, we hope to develop a more rigorous methodology with help from the DeFi community and finance experts.
 
-The current rules for inclusion in an index category are:
+The current rules for inclusion in each category can be found on their respective pages on the app.
 
-- The token is at least a week old.
-  - This is necessary for the token's price to be assessed using the Uniswap oracle, but it is somewhat irrelevant as the governance timelock requires more than a week for decisions to go into effect.
-- The token complies with the ERC20 standard.
-  - Boolean return values are not required.
-- No major vulnerabilities have been discovered in the token contract.
-- The token does not have a deflationary supply model.
-  - This could impact the functionality of the pool contract.
-- The token's supply can not be arbitrarily inflated or deflated maliciously.
-  - The governance model should be considered if the supply can be modified arbitrarily.
+- [Decentralized Finance Category](https://indexed.finance/category/0x2)
+- [Cryptocurrency Category](https://indexed.finance/category/0x1)
 
 ## Category Sorting
 Token categories are regularly sorted in descending order of the tokens' market caps using a weekly moving average of the tokens' prices. Market caps are extrapolated by taking the weekly moving average price of a token returned by the Uniswap oracle and multiplying by its total supply. In the future we plan on using more advanced metrics like float-adjusted capitalization, as is used in S&P indices, to get a more accurate representation of the value of tokens' active liquidity.

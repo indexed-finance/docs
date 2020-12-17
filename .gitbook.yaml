@@ -1,4 +1,4 @@
 root: ./
 structure:
-  readme: index.md
+  readme: protocol/index.md
   summary: summary.md
