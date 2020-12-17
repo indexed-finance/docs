@@ -3,7 +3,6 @@
 The index pool controller is a contract which tracks token values and sets portfolio targets using an adjusted capitalization-weighted formula. The NDX governance dao has the ability to create and manage token categories on the controller, which are baskets of assets with some arbitrary commonality. 
 
 ## Category Token Selection
-The selection of tokens in the first two index categories was somewhat subjective and was simply intended to capture the top tokens in their respective market sectors. In the future, we hope to develop a more rigorous methodology with help from the DeFi community and finance experts.
 
 The current rules for inclusion in each category can be found on their respective pages on the app.
 
