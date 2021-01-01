@@ -1,8 +1,9 @@
 # Table of Contents
 
-## Protocol
+* [Introduction](protocol/index.md)
 
-* [Home](protocol/index.md)
+# Index Pools
+
 * [Terminology](protocol/terminology.md)
 * [Governance](protocol/governance.md)
 * [Security](protocol/security.md)
