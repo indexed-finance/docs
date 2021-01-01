@@ -1,6 +1,6 @@
 # Table of Contents
 
-# Index Pools
+## Protocol
 
 * [Terminology](protocol/terminology.md)
 * [Governance](protocol/governance.md)
