@@ -1,6 +1,6 @@
 # Indexed Finance
 
-![Indexed Finance Banner](./assets/banner-dark.png)
+![](./assets/banner-dark.png)
 
 Indexed Finance is a project focused on the development of passive portfolio management strategies for the Ethereum network.
 
