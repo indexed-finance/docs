@@ -1,7 +1,5 @@
 # Table of Contents
 
-* [Introduction](protocol/index.md)
-
 # Index Pools
 
 * [Terminology](protocol/terminology.md)
