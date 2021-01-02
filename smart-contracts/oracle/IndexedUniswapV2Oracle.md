@@ -72,7 +72,7 @@ function hasPriceObservationInWindow(address token, uint256 priceKey) returns (b
 Returns a boolean indicating whether a price was recorded for `token` at `priceKey`.
 
 
-## Parameters:
+### Parameters:
 - `token`: Token to check if the oracle has a price for
 
 - `priceKey`: Index of the hour to check
@@ -87,7 +87,7 @@ Returns the price observation for `token` recorded in `priceKey`.
 Reverts if no prices have been recorded for that key.
 
 
-## Parameters:
+### Parameters:
 - `token`: Token to retrieve a price for
 
 - `priceKey`: Index of the hour to query
