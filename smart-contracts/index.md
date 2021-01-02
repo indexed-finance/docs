@@ -1,4 +1,4 @@
-# Smart Contracts
+# Smart Contract Deployments
 
 - [GovernorAlpha](https://etherscan.io/address/0x95129751769f99CC39824a0793eF4933DD8Bb74B#code)
 - [NDX Token](https://etherscan.io/token/0x86772b1409b61c639EaAc9Ba0AcfBb6E238e5F83)

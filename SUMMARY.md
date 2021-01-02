@@ -11,8 +11,9 @@
   * [Bootstrapping new tokens](protocol/rebalancing/adding-tokens.md)
   * [Removing tokens](protocol/rebalancing/removing-tokens.md)
 
-## [Smart Contracts](smart-contracts/index.md)
+## Smart Contracts
 
+* [Deployments](smart-contracts/index.md)
 * [IndexPool.sol](smart-contracts/pool.md)
 * [PoolInitializer.sol](smart-contracts/initializer.md)
 * [UnboundTokenSeller.sol](smart-contracts/token-seller.md)
