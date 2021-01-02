@@ -14,8 +14,8 @@ The NDX governance organization is responsible for:
 NDX is the governance token for Indexed. The initial supply of 10,000,000 NDX will be distributed as follows:
 - 20% will go to the founders, investors and future team members, subject to vesting periods.
 - 5% will be used to reward keepers who update the Uniswap oracle and trigger periodic updates on the pool controller.
-- 25% will be available for liquidity mining between December 22, 2020 and January 21, 2021.
-- 20% will be distributed to DeFi users after January 22, 2021.
+- 25% will be distributed through liquidity mining to users who stake index tokens or their Uniswap Ether pair LP tokens.
+- 20% will be distributed to DeFi users after January 22, 2021 in a manner determined by governance.
 - 30% will be made available to the NDX treasury over the course of 9 months, beginning March 1, 2021.
 
 After June 1, 2021 the ability to mint new NDX tokens will be available to the governance organization.
@@ -29,7 +29,3 @@ In order to ensure the security of the project while distribution is underway, t
 ## Keepers
 
 The 5% allocation for keepers is currently held by the timelock contract and will be transferred once we complete development and testing of the keeper bot and contract. Until then we will trigger the updates ourselves, and anyone else can do so on Etherscan.
-
-## Liquidity Mining
-
-The initial liquidity mining period will begin on December 22 and continue for 30 days. Users will be able to mine NDX by staking CC10, DEFI5 or the Uniswap LP tokens for their respective WETH pairs. Each pool will receive 625,000 NDX in total.
