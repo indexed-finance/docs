@@ -13,7 +13,7 @@
 
 ## Smart Contracts
 
-* [Deployments](smart-contracts/index.md)
+* [Deployments](smart-contracts/deployments.md)
 * [IndexPool.sol](smart-contracts/pool.md)
 * [PoolInitializer.sol](smart-contracts/initializer.md)
 * [UnboundTokenSeller.sol](smart-contracts/token-seller.md)
