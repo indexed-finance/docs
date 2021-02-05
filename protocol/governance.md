@@ -15,7 +15,7 @@ NDX is the governance token for Indexed. The initial supply of 10,000,000 NDX wi
 - 30% will be made available to the NDX treasury over the course of 9 months, beginning March 1, 2021.
 - 25% will be distributed through liquidity mining to users who stake CC10/DEFI5 index tokens or their Uniswap Ether pair LP tokens (ending March 8th 2021).
 - 20% will go to the founders, investors and future team members, subject to vesting periods.
-- 14% will be distributed to DeFi users via the treasury in a manner determined by governance.
+- 14% will be distributed via the treasury in a manner to be determined by governance.
 - 6% will be distributed through liquidity mining to users who stake index tokens or Uniswap Ether pair LP tokens as part of the [Sigma program](https://forum.indexed.finance/t/iip-4-sigma-pilot/74).
 - 5% will be used to reward keepers who update the Uniswap oracle and trigger periodic updates on the pool controller.
 
