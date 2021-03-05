@@ -1,5 +1,11 @@
 # Table of Contents
 
+## Introduction
+
+* [Frequently Asked Questions](community/faq.md)
+* [The Sigma Program](community/sigma.md)
+* [Value Accrual](community/value-accrual.md)
+
 ## Protocol
 
 * [Terminology](protocol/terminology.md)
