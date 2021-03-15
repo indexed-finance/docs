@@ -67,7 +67,7 @@ When minting new index tokens, you have three options:
 
 * Provide each of the underlying tokens within the pool.
 * Provide _one_ of the underlying tokens within the pool.
-* Use the Mint Through Uniswap option on the appropriate page, routing an asset into 
+* Use the Mint Through Uniswap option on the appropriate page, routing an asset into an underlying component in order to mint.
 
 ### What Is This 'Swap Fee'? Do I Have To Pay It?
 
