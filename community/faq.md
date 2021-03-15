@@ -30,7 +30,7 @@ At present, we have four offerings available, with the following target sectors:
 * [DEFI5](https://www.coingecko.com/en/coins/defi-top-5-index) - large cap DeFi governance tokens.
 * [CC10](https://www.coingecko.com/en/coins/cryptocurrency-top-10-index) - large cap protocol tokens and DeFi governance tokens.
 * [ORCL5](https://www.coingecko.com/en/coins/oracle-top-5-index) - medium cap protocol and governance tokens for oracle projects.
-* [DEGEN](https://www.coingecko.com/en/coins/degen-index) - [Sigma Program] higher risk protocol and governance tokens.
+* [DEGEN](https://www.coingecko.com/en/coins/degen-index) - higher risk protocol and governance tokens.
 
 ### But, What _Are_ The Index Tokens?
 
@@ -73,6 +73,6 @@ When minting new index tokens, you have three options:
 
 If you opt for the first option above, you will _not_ have to pay the 2.5% swap fee - you are providing the underlying assets in the correct amounts, and will not trigger a swap within the pool to rebalance the weightings therein.
 
-In the latter two cases, the swap fee applies. This fee is designed to lessen the impact and frequency of arbitrageurs, and is distributed to liquidity providers of the pool - namely, the existing index token holders. This is how the simple act of holding an index token becomes a form of passive investment.
+In the latter two cases, the swap fee applies. This fee is designed to lessen the impact and frequency of arbitrageurs, and is distributed to liquidity providers of the pool - namely, the existing index token holders. This is how the simple act of holding an index token becomes a form of passive investment, over and above the value gained - or lost - based on the performance of the index assets themselves.
 
 Note that minting is a fairly gas-intensive operation, and is not recommended for small amounts - you may well end up paying as much (or more) in gas than you receive by way of index tokens.
