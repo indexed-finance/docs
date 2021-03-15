@@ -38,7 +38,7 @@ Fundamentally, the index tokens themselves are Balancer liquidity tokens, repres
 
 Each index has two 'groupings': the current constituent list - those tokens that are currently _active_ within the associated Balancer pool, and a secondary 'candidate' list of tokens waiting on the sidelines, ready to be switched in if an active member underperforms relative to the others, or if a particular candidate's performance justifies it's inclusion.
 
-Periodically, the target weights of members of the pools are recalculated (dependent on the weighting strategy associated with a given index), and occasional reindexes evaluate the list of all current and potential members to determine if membership of the current list needs to be adjusted due to shifts in performance of all tokens.
+Periodically, the target weights of members of the pools are recalculated on-chain (dependent on the weighting strategy associated with a given index), and occasional reindexes evaluate the list of all current and potential members to determine if membership of the current list needs to be adjusted due to shifts in performance of all tokens.
 
 At present, our weighting strategies are all based on the square root of market-capitalisations (either fully diluted or circulating). As time goes on, we will introduce a wider range of strategies, enabling a pick-and-mix style of financial instrument creation.
 
@@ -57,7 +57,7 @@ However, the simple act of holding the index tokens themselves is a passive inve
 
 ### Can I Stake NDX Itself?
 
-No, and there are currently no plans to enable this. Incentivising people to lock up NDX in a liquidity pair (i.e. NDX/ETH) in order to earn NDX by way of reward would have the adverse effect of making governance _harder_ for the wider platform, as staked NDX cannot be used to vote.
+Not at present, however this may change in the future. It is worth noting, however, that incentivising people to lock up NDX in a liquidity pair (i.e. NDX/ETH) in order to earn NDX by way of reward would have the adverse effect of making governance _harder_ for the wider platform, as staked NDX cannot be used to vote.
 
 ## Minting And Burning
 
