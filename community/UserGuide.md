@@ -13,7 +13,7 @@
 ![swap](assets/usr_guide1.jpg)
 
 ### 2. Click on the index pool you would like to invest in
-![swap](https://previews.dropbox.com/p/thumb/ABIkAwv8f-qV6ZYzDd_t4J3quaOlGtg_OPToVYBzFEWCuL0CALRYe1g1PF6OSo_pE8D6rf5eYj6H4T0vauPPOH0XRuioZINL0Dnjki-kuDUBMfpAkKSEEEJoXuoPu40A5aVq2coZ_bJe6MbjnXCqXFb8XYOo5k1yUgpFHp7X1GZhtaknZs8gKYuVwIixP2jicPt6N1LHZ6P1t-EIP6Hxbb9_8nfb3AXj0tItfGJd226vJiAn8MprfAQn_ueWAMlRqxRddskc1_FMAotXAcf6JnYluJrN0FDGay7ghaTDsbP1jaFI4HGiOVQ5wjRBKpeXw_LbRy-_JjP2MRSjmFcAIdhdRf0jcDyygwUJNPKeLD9BJQ/p.png?fv_content=true&size_mode=5)
+![swap](assets/usr_guide2.png)
 ### 3. Select the amount of index tokens you would like to swap for
 
 ### 4. Click "Swap" and you're done! 
