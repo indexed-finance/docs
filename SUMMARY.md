@@ -2,11 +2,15 @@
 
 ## Introduction
 
-* [Frequently Asked Questions](community/faq.md)
-* [The Sigma Program](community/sigma.md)
-* [Governance And You](community/user-governance.md)
+* [FAQs](community/faq.md)
 
-## Protocol
+## Day-To-Day Operations
+
+* [The Sigma Program](community/sigma.md)
+
+## Technical Details
+
+### Protocol
 
 * [Terminology](protocol/terminology.md)
 * [Governance](protocol/governance.md)
@@ -17,7 +21,7 @@
   * [Bootstrapping new tokens](protocol/rebalancing/adding-tokens.md)
   * [Removing tokens](protocol/rebalancing/removing-tokens.md)
 
-## Smart Contracts
+### Smart Contracts
 
 * [Deployments](smart-contracts/deployments.md)
 * [IndexPool.sol](smart-contracts/pool.md)

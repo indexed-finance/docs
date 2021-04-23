@@ -1,4 +1,4 @@
-# Frequently Asked Questions
+# FAQs
 
 Hi there, and welcome to the Indexed docs! As this is probably the first page you've clicked on, hopefully we'll be able to answer any initial questions you may have here.
 
@@ -6,11 +6,11 @@ This is an evolving document, and we'll be adding/editing it as questions come t
 
 If you want to see something added here - come to [our Discord](https://discord.gg/jaeSTNPNt9) and ask us!
 
-Last update: 16th April 2021.
+*Last update: 23 April 2021*
 
 ## The Indexed Platform
 
-The purpose of Indexed Finance is to provide financial products that help users invest in the various market sectors or groupings within the cryptocurrency space (primarily on Ethereum, although we intend to eventually branch out to synthetic stocks and wrapped assets across different blockchains).
+The purpose of Indexed Finance is to provide financial products that help users invest in the various market sectors or groupings within the cryptocurrency space: primarily on Ethereum, although we intend to eventually branch out to synthetic stocks and wrapped assets across different blockchains.
 
 By providing these instruments, we aim to enable exposure to the wider cryptocurrency market to those who are interested in the sector but do not have the time or inclination to research which projects are worthy of their attention, or separate the signals from the noise in the wider market. They are intended to act as 'set and forgets' for the more passive investor.
 
@@ -50,7 +50,7 @@ It's worth emphasising that the Indexed DAO itself does *not* control the assets
 
 In short, no. Indices are superb instruments for gaining exposure to a large segment of a market at once, but they are subject to downturns just as much as any other asset or instrument. As with all crypto assets, do not invest more than you can afford to lose.
 
-There are security measures in place on some of our index products to ensure that malicious actions or contract breaches cannot drain the funds of an index pool entirely. For more on this, please see the [Sigma Program](sigma.md).
+There are security measures in place on some of our index products to ensure that malicious actions or contract breaches cannot drain the funds of an index pool entirely. For more on this, please see the [Sigma Program](sigma.md)
 
 ## Staking And Rewards
 
