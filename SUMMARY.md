@@ -4,7 +4,7 @@
 
 * [Frequently Asked Questions](community/faq.md)
 * [The Sigma Program](community/sigma.md)
-* [Value Accrual](community/value-accrual.md)
+* [Governance And You](community/user-governance.md)
 
 ## Protocol
 
