@@ -18,25 +18,25 @@ By providing these instruments, we aim to enable exposure to the wider cryptocur
 
 The NDX token is - at present - a pure governance token (as a fork of UNI), intended for people who wish to participate in determining the direction of the Indexed platform as it evolves by way of [voting on proposals](https://www.withtally.com/governance/indexed) brought forward by the DAO (either for or against).
 
-## The Index Tokens [CC10, DEFI5 et al]
+## Index Tokens
 
-All of our products are themselves Ethereum tokens, with their prices reflected by the weighted performance of their constituents. The strategy for determing weights within a particular index is determined by the [index controller](../protocol/index-controller.md) associated with it.
+All of our indices are themselves ERC20-compliant Ethereum tokens, with their prices reflected by the weighted performance of their constituents. The strategy for determing weights within a particular index is determined by the [index controller](../protocol/index-controller.md) associated with it.
 
-### What Are The Index Tokens?
+### What Indices Do You Offer?
 
-At present, we have five offerings available, with the following target sectors:
+At present, we have five indices available for purchase, with the following target sectors:
 
 * [DEFI5](https://www.coingecko.com/en/coins/defi-top-5-index) - large cap DeFi governance tokens.
 * [CC10](https://www.coingecko.com/en/coins/cryptocurrency-top-10-index) - large cap protocol tokens and DeFi governance tokens.
 * [ORCL5](https://www.coingecko.com/en/coins/oracle-top-5-index) - medium cap protocol and governance tokens for oracle projects.
 * [DEGEN](https://www.coingecko.com/en/coins/degen-index) - higher risk protocol and governance tokens.
-* [NFTP] (https://www.coingecko.com/en/coins/nft-platform-index) - protocol and governance tokens across various NFT platforms and the wider Metaverse.
+* [NFTP](https://www.coingecko.com/en/coins/nft-platform-index) - protocol and governance tokens across various NFT platforms and the wider Metaverse.
 
-### But, What _Are_ The Index Tokens?
+### What _Are_ The Index Tokens, Really?
 
-Fundamentally, the index tokens themselves are Balancer liquidity tokens, representing ownership in a pool comprising the tokens currently within the index. The members of these pools have _target weights_ assigned to them, and differences between the current and target weights (due to price fluctuations) are evened out via arbitrage.
+Fundamentally, the index tokens themselves represent fractional ownership of assets in pools maintained by a fork of [Balancer](https://balancer.finance/whitepaper/). Assets within these pools have _target weights_ assigned to them, and differences between the current and target weights (due to price fluctuations) are evened out via arbitrage.
 
-Each index has two 'groupings': the current constituent list - those tokens that are currently _active_ within the associated Balancer pool, and a secondary 'candidate' list of tokens waiting on the sidelines, ready to be switched in if an active member underperforms relative to the others, or if a particular candidate's performance justifies its inclusion.
+Each index has two 'groupings': the current constituent list - those tokens that are currently _active_ within the associated Balancer pool - and a secondary 'candidate' list of tokens waiting on the sidelines, ready to be switched in if an active member underperforms relative to the others, or if a particular candidate's performance justifies its inclusion.
 
 Periodically, the target weights of members of the pools are recalculated on-chain (dependent on the weighting strategy associated with a given index), and occasional reindexes evaluate the list of all current and potential members to determine if membership of the current list needs to be adjusted due to shifts in performance of all tokens.
 
@@ -50,19 +50,15 @@ It's worth emphasising that the Indexed DAO itself does *not* control the assets
 
 In short, no. Indices are superb instruments for gaining exposure to a large segment of a market at once, but they are subject to downturns just as much as any other asset or instrument. As with all crypto assets, do not invest more than you can afford to lose.
 
-There are security measures in place on some of our index products to ensure that malicious actions or contract breaches cannot drain the funds of an index pool entirely. For more on this, please see the [Sigma Program](sigma.md)
-
 ## Staking And Rewards
 
 At present, we reward users who provide liquidity to DEXes (i.e. Uniswap) in the form of NDX governance tokens, at a rate relative to their share of the liquidity pool over a fixed daily emission.
 
-We are in the process of migrating this reward scheme to a fork of Masterchef, as detailed in [this proposal](https://forum.indexed.finance/t/proposal-dynamic-reward-emission-schedule/510) - if adopted, this will set forth a flexible two-year schedule, allowing us to best incentivise those pools that require additional liquidity (with the primary aim being minimal slippage, for the above reason of wanting to ease access to the market for users who are not crypto-native).
+We are in the process of migrating this reward scheme to a fork of Masterchef, as detailed in [this proposal](https://forum.indexed.finance/t/proposal-dynamic-reward-emission-schedule/510) - if adopted, this will begin a flexible two-year schedule that allows the DAO to best incentivise those pools that require additional liquidity.
 
-However, the simple act of holding the index tokens themselves is a passive investment act, due to the way in which the swap fee for minting index tokens or arbitraging the underlying pools are dissipated: see [this](https://twitter.com/need3lives/status/1369358000763371522) informative thread by a community user.
+### I Hold {X} - Why Can't I Stake It For Rewards?
 
-### I Hold {X} - Why Can't I Stake It?
-
-The most likely cause of this is that you're trying to stake the 'pure' token (such as DEFI5), rather than the equivalent Uniswap liquidity provider (LP) token, DEFI5-ETH.
+The most likely cause of this is that you're trying to stake the 'pure' token (such as DEFI5), rather than the equivalent Uniswap liquidity provider (LP) token, e.g. DEFI5-ETH.
 
 If you're unfamiliar with the process of providing liquidity, please read [this article](https://defiprime.com/uniswap-liquidity-pools). Be sure you're absolutely certain what you're doing before you engage in staking.
 
