@@ -56,7 +56,7 @@ So, if you have a neat idea for a new index, the way to go about making it real 
     * The number of tokens it will actively contain (minimum 3, maximum 10),
     * Criteria for token inclusion (age, market capitalisation),
     * The list of tokens to include at launch (maximum 25),
-    * [Optional] If you're capable of making a large initial liquidity commitment, mention this
+    * [Optional] If you're capable of making a large initial liquidity commitment, mention this,
     * [Optional] Ideas for an icon/logo.
 * The Sigma committee will look over the proposal and provide their feedback.
 
@@ -70,7 +70,7 @@ Examples of successful applications made in this manner are:
 
 ## Liquidity Mining
 
-Separate to the long-term liquidity mining proposal [currently being discussed by the DAO](https://forum.indexed.finance/t/proposal-update-ndx-emissions-schedule/639/), the Sigma committee has been granted 600,000 NDX tokens to allocate as staking rewards, in order to quickly get sufficient liquidity into an AMM so that we can both gauge the appetite for new indices and measure their performance as market-traded instruments
+Separate to the long-term liquidity mining proposal [currently being discussed by the DAO](https://forum.indexed.finance/t/proposal-update-ndx-emissions-schedule/639/), the Sigma committee has been granted 600,000 NDX tokens to allocate as staking rewards, in order to quickly get sufficient liquidity into an AMM so that we can both gauge the appetite for new indices and measure their performance as market-traded instruments.
 
 The amount of NDX allocated as rewards to newly created pools is left to the Sigma committee, and is impacted by predicted appeal, the number of tokens in the active pool (more tokens leads to more impermanent loss) and any initial liquidity commitments made by the proposer.
 
