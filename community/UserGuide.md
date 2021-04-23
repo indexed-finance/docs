@@ -17,7 +17,7 @@
 ### 3. Select the amount of index tokens you would like to swap for
 
 ### 4. Click "Swap" and you're done! 
-![swap](https://previews.dropbox.com/p/thumb/ABIoVToF_7F4mIkmDo8oLoRdqv_lODdtg0pbY8kVigByvlqOEMV7k1RuvyeqzbDcY_ewrcgaqW90yN-URJnf8FNC6eglOD0_tfrQHyKPKJCryXJdK3oTCkkM_YpBkBtuilBTWve9dssK2kauhMJwO5OIQz-Ji0xxdGqZTodKpQmtGce6QYOG6LeKYWaZIqgT5Hw_C19S3G8Lw150spEiuAnI8w_n0uzHqXKTj8cCIK1aZzTmrNCLUTdm3FBmTaMb0BBM2oIw7UzfTA-H7-H7e1ASt0csQjSL-r_gfobDhCW2W4ebIKBoVO9lRA7XexkoFHHQJgP38vGgX-NzlSad3emHqGF9mWegZuloIPFPnNAj6w/p.png?fv_content=true&size_mode=5)
+![swap](assets/usr_guide3.png)
 
 *You can also make a spot order for one of the index tokens directly on [Uniswap] (this link directs to the DEFI Top 5 Index)*
 
@@ -35,7 +35,7 @@ Another option is to mint one of the index tokens using the underlying tokens th
 ### 4. Check that your wallet holds of each underlying token to mint the index token (you won't be able to mint the index token if you don't) 
 
 ### 5. Click "Mint" and you will recieve the single index tokens in your wallet shortly
-![swap](https://previews.dropbox.com/p/thumb/ABIkav392xe5zO4_H78HHgHMke7iSFuqxcUMOhxGRBylEbR8TGgOpj9KreDzDPxRaw8TzElHrDGOOWHIJtnhNb83TJ_U7g6TUXPrGS7x_dZeCTFlGZWM5Uvqj5GezXqSrlGQYZeIoYHLzY5dMoHDwKJgttlB40Q_0chF3qO7TCoomw0TqhBD-kJkhhg9AbLfKQRpDORfXL_-Fb5ajup_leU3KTEtZu7RxVSQaEMOtLfgn-mspO3XGNInJ4DSJiu9NDJapYLz08XQqlwEhv7oo1ffiJt6U6tprZg-yXAvudBsnk5XnvbZPjBU1LxoyICoofzkzy9R-r5SWTCA83jQxasWs2aCkhRMg5lLgb-E43u5-A/p.png?fv_content=true&size_mode=5)
+![swap](assets/usr_guide4.png)
 
 ## **Burning the Index Tokens** 
 Burning the index tokens is just the opposite of minting them, if you hold index tokens, you can destroy index tokens for the underlying assets if you would like to trade them seperatley, stake them, or participate in that project's governance proposals 
@@ -47,7 +47,7 @@ Steps:
 ### 3. Type how many index pool tokens you would like to destroy
 
 ### 4. Click "Burn" and you will recieve the underlying tokens in your wallet shortly
-![swap](https://previews.dropbox.com/p/thumb/ABJku1EMezrN3ifsc4Hno3ZwIHLpHpqNJst4O74Ju4amuHy1Uev42c_O1vtmuZkSrY-ENO2PkyZFRCiH34NZPhgUik_19OTi6aFHifyv34SR3EteEhkFN1pbCltijqxZMsEaUoK9NuVtJTzvyLGomg1AJiyh8bxmcwLAMMh7-Gt3YqqH9Ug0XeBJ6V1uET0sjkucPr-ddXyheEhthEiXj6YDkCEl26CHGiQ5P7Gw0sIjLf-LtUUHdKCf3l0fH5aICI82r7P6-aFKvrN2ira7rEhT0EDRUAEaHCV5vHRXTQUh9-hzbxPox_w6XL8qqL0-RWwERBMPlSOaFInU6ndVGeM_bGmHtvPNmYVrZfbT6m370g/p.png?fv_content=true&size_mode=5)
+![swap](assets/Usr_guide5.png)
 
 [Uniswap]: <https://app.uniswap.org/#/swap?outputCurrency=0xfa6de2697d59e88ed7fc4dfe5a33dac43565ea41>
   
