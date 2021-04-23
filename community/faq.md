@@ -24,13 +24,13 @@ All of our indices are themselves ERC20-compliant Ethereum tokens, with their pr
 
 ### What Indices Do You Offer?
 
-At present, we have five indices available for purchase, with the following target sectors:
+At present, we have five indices available for purchase, with the following descriptions:
 
-* [DEFI5](https://www.coingecko.com/en/coins/defi-top-5-index) - large cap DeFi governance tokens.
-* [CC10](https://www.coingecko.com/en/coins/cryptocurrency-top-10-index) - large cap protocol tokens and DeFi governance tokens.
-* [ORCL5](https://www.coingecko.com/en/coins/oracle-top-5-index) - medium cap protocol and governance tokens for oracle projects.
-* [DEGEN](https://www.coingecko.com/en/coins/degen-index) - higher risk protocol and governance tokens.
-* [NFTP](https://www.coingecko.com/en/coins/nft-platform-index) - protocol and governance tokens across various NFT platforms and the wider Metaverse.
+* [DEFI5](https://www.coingecko.com/en/coins/defi-top-5-index) - a hyper-focused index of the most successful large-cap decentralized finance protocols across the Ethereum chain,
+* [CC10](https://www.coingecko.com/en/coins/cryptocurrency-top-10-index) - an index combining several popular medium/large-cap protocols, primarily drawn from decentralized finance,
+* [ORCL5](https://www.coingecko.com/en/coins/oracle-top-5-index) - an index representing the current market leaders in protocols designed to bring external data onto the blockchain,
+* [DEGEN](https://www.coingecko.com/en/coins/degen-index) - a higher risk/reward index of promising Ethereum protocols that have significant room to grow, and
+* [NFTP](https://www.coingecko.com/en/coins/nft-platform-index) - a collectors index of governance and protocol tokens drawn from both the NFT space and the wider Metaverse
 
 ### What _Are_ The Index Tokens, Really?
 
