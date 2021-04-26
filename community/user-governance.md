@@ -4,7 +4,7 @@ If you hold NDX tokens, you have a voice when it comes to decisions made by the 
 
 In this section, we'll cover the various ways in which you can utilize that voice.
 
-_Last update: 23 April 2021_
+_Last update: 26 April 2021_
 
 ## The Overall Process
 
