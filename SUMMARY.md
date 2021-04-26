@@ -7,6 +7,7 @@
 ## Day-To-Day Operations
 
 * [The Sigma Program](community/sigma.md)
+* [Using Your Vote](community/user-governance.md)
 
 ## Technical Details
 
