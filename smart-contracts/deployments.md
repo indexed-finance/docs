@@ -52,6 +52,7 @@
 | Contract      | Link |
 | ----------- | ----------- |
 | ScoreBySqrtCMC | [0x9942A2ead03DB203Afb3443B24A0859a60513542](https://etherscan.io/address/0x9942A2ead03DB203Afb3443B24A0859a60513542#code) |
+| ScoreByCMCBarbell6 | [0x5E48dd39923a4e3794ad359200129DB3b5d47c64](https://etherscan.io/address/0x5E48dd39923a4e3794ad359200129DB3b5d47c64#code) |
 
 # Proxy Implementations
 

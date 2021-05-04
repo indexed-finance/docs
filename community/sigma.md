@@ -12,7 +12,7 @@ In short: the Sigma program is designed to quickly create innovative products on
 
 The 'core' products that are offered by Indexed - DEFI5, CC10 and ORCL5 - are maintained entirely by the DAO, in that their [controller](https://etherscan.io/address/0xf00a38376c8668fc1f3cd3daeef42e0e44a7fcdb) is owned by the NDX [Timelock contract](https://etherscan.io/address/0x78a3ef33cf033381feb43ba4212f2af5a5a0a2ea) (the treasury), the admin of which is the Indexed [Governor Alpha contract](https://etherscan.io/address/0x95129751769f99cc39824a0793ef4933dd8bb74b).
 
-The upshot of this is that on-chain governance votes are required to operate these pools (i.e. adding or removing tokens from the asset lists). This is very much as things should be for our established products - reweighs and reindexes can be triggered by anyone (see [Reweighing & Reindexing](reweighing-reindexing.md)), but changes need to be approved by protocol governance.
+The upshot of this is that on-chain governance votes are required to operate these pools (i.e. adding or removing tokens from the asset lists). This is very much as things should be for our established products - reweighs and reindexes can be triggered by anyone, but changes need to be approved by protocol governance.
 
 However, in the days of 300+ gwei gas prices, these are expensive changes to make, and they take time to be applied: three days for the on-chain vote, followed by a two-day timelock before they can be executed, assuming they reach quorum.
 
