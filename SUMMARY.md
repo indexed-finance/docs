@@ -7,7 +7,6 @@
 ## Day-To-Day Operations
 
 * [Using Your Vote](community/user-governance.md)
-* [Reweighing & Reindexing](community/reweighing-reindexing.md)
 * [The Sigma Program](community/sigma.md)
 
 ## Technical Details
@@ -20,8 +19,8 @@
 * [Index Controller](protocol/index-controller.md)
 * [Index Pools](protocol/pools.md)
 * [Rebalancing](protocol/rebalancing/index.md)
-  * [Bootstrapping new tokens](protocol/rebalancing/adding-tokens.md)
-  * [Removing tokens](protocol/rebalancing/removing-tokens.md)
+  * [Bootstrapping New Tokens](protocol/rebalancing/adding-tokens.md)
+  * [Removing Tokens](protocol/rebalancing/removing-tokens.md)
 
 ### Smart Contracts
 
