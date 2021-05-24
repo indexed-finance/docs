@@ -1,5 +1,17 @@
 # Smart Contract Deployments
 
+# Index Tokens
+
+| Contract      | Link |
+| ----------- | ----------- |
+| CC10 | [0x17ac188e09a7890a1844e5e65471fe8b0ccfadf3](https://etherscan.io/address/0x17ac188e09a7890a1844e5e65471fe8b0ccfadf3#code) |
+| DEFI5 | [0xfa6de2697d59e88ed7fc4dfe5a33dac43565ea41](https://etherscan.io/address/0xfa6de2697d59e88ed7fc4dfe5a33dac43565ea41#code) |
+| DEGEN | [0x126c121f99e1e211df2e5f8de2d96fa36647c855](https://etherscan.io/address/0x126c121f99e1e211df2e5f8de2d96fa36647c855#code) |
+| ERROR | [0xd3deff001ef67e39212f4973b617c2e684fa436c](https://etherscan.io/address/0xd3deff001ef67e39212f4973b617c2e684fa436c#code) |
+| FFF | [0xabafa52d3d5a2c18a4c1ae24480d22b831fc0413](https://etherscan.io/address/0xabafa52d3d5a2c18a4c1ae24480d22b831fc0413#code) |
+| NFTP | [0x68bb81b3f67f7aab5fd1390ecb0b8e1a806f2465](https://etherscan.io/address/0x68bb81b3f67f7aab5fd1390ecb0b8e1a806f2465#code) |
+| ORCL5 | [0xd6cb2adf47655b1babddc214d79257348cbc39a7](https://etherscan.io/address/0xd6cb2adf47655b1babddc214d79257348cbc39a7#code) |
+
 # Governance
 
 | Contract      | Link |
