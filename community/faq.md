@@ -24,14 +24,15 @@ All of our indices are themselves ERC20-compliant Ethereum tokens, with their pr
 
 ### What Indices Do You Offer?
 
-At present, we have six indices available for purchase, with the following descriptions:
+At present, we have seven indices available for purchase, with the following descriptions:
 
 * [DEFI5](https://www.coingecko.com/en/coins/defi-top-5-index) - a hyper-focused index of the most successful large-cap decentralized finance protocols across the Ethereum chain,
 * [CC10](https://www.coingecko.com/en/coins/cryptocurrency-top-10-index) - an index combining several popular medium/large-cap protocols, primarily drawn from decentralized finance,
 * [ORCL5](https://www.coingecko.com/en/coins/oracle-top-5-index) - an index representing the current market leaders in protocols designed to bring external data onto the blockchain,
-* [DEGEN](https://www.coingecko.com/en/coins/degen-index) - a higher risk/reward index of promising Ethereum protocols that have significant room to grow, and
-* [NFTP](https://www.coingecko.com/en/coins/nft-platform-index) - a collectors index of governance and protocol tokens drawn from both the NFT space and the wider Metaverse
-* [ERROR](https://www.coingecko.com/en/coins/484-fund) - a barbell-weighted fund tracking the favoured projects of [0xb1.484](https://etherscan.io/address/0xb1adceddb2941033a090dd166a462fe1c2029484), one of the largest capital providers in DeFi.
+* [DEGEN](https://www.coingecko.com/en/coins/degen-index) - a higher risk/reward index of promising Ethereum protocols that have significant room to grow,
+* [NFTP](https://www.coingecko.com/en/coins/nft-platform-index) - a collectors index of governance and protocol tokens drawn from both the NFT space and the wider Metaverse,
+* [ERROR](https://www.coingecko.com/en/coins/484-fund) - a barbell-weighted fund tracking the favoured projects of [0xb1.484](https://etherscan.io/address/0xb1adceddb2941033a090dd166a462fe1c2029484), one of the largest capital providers in DeFi, and
+* [FFF](https://www.coingecko.com/en/coins/future-of-finance-fund) - a meta-index providing exposure to BTC, ETH, large/medium-cap DeFi protocols and low-cap growth bets across Ethereum.
 
 ### What _Are_ The Index Tokens, Really?
 
