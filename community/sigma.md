@@ -65,8 +65,6 @@ Note that if you provide a list of tokens that is larger than the number to be a
 Examples of successful applications made in this manner are:
   * [The DEGEN Index](https://forum.indexed.finance/t/application-for-the-degen-index/85) ($DEGEN)
   * [The 484 Fund](https://forum.indexed.finance/t/application-for-484-fund-error/583/) ($ERROR)
-
-Pending applications utilising this framework:
   * [The Future Of Finance Fund](https://forum.indexed.finance/t/proposal-the-future-of-finance-fund-fff/625) ($FFF)
 
 ## Liquidity Mining
