@@ -29,9 +29,10 @@ At present, we have six indices available for purchase, with the following descr
 * [DEFI5](https://www.coingecko.com/en/coins/defi-top-5-index) - a hyper-focused index of the most successful large-cap decentralized finance protocols across the Ethereum chain,
 * [CC10](https://www.coingecko.com/en/coins/cryptocurrency-top-10-index) - an index combining several popular medium/large-cap protocols, primarily drawn from decentralized finance,
 * [ORCL5](https://www.coingecko.com/en/coins/oracle-top-5-index) - an index representing the current market leaders in protocols designed to bring external data onto the blockchain,
-* [DEGEN](https://www.coingecko.com/en/coins/degen-index) - a higher risk/reward index of promising Ethereum protocols that have significant room to grow, and
+* [DEGEN](https://www.coingecko.com/en/coins/degen-index) - a higher risk/reward index of promising Ethereum protocols that have significant room to grow,
 * [NFTP](https://www.coingecko.com/en/coins/nft-platform-index) - a collectors index of governance and protocol tokens drawn from both the NFT space and the wider Metaverse
-* [ERROR](https://www.coingecko.com/en/coins/484-fund) - a barbell-weighted fund tracking the favoured projects of [0xb1.484](https://etherscan.io/address/0xb1adceddb2941033a090dd166a462fe1c2029484), one of the largest capital providers in DeFi.
+* [ERROR](https://www.coingecko.com/en/coins/484-fund) - a barbell-weighted fund tracking the favoured projects of [0xb1.484](https://etherscan.io/address/0xb1adceddb2941033a090dd166a462fe1c2029484), one of the largest capital providers in DeFi, and
+* [FFF](https://www.coingecko.com/en/coins/future-of-finance-fund) - a meta-index providing all-in-one exposure to Bitcoin and Ether (20% each), with the remainder weighted across DEFI5, CC10 and DEGEN using circulating market cap weightings.
 
 ### What _Are_ The Index Tokens, Really?
 
@@ -53,13 +54,13 @@ In short, no. Indices are superb instruments for gaining exposure to a large seg
 
 ## Staking And Rewards
 
-At present, we reward users who provide liquidity to DEXes (i.e. Uniswap) in the form of NDX governance tokens, at a rate relative to their share of the liquidity pool over a fixed daily emission.
+At present, we reward users who provide liquidity to DEXes (i.e. Uniswap) in the form of NDX governance tokens, at a rate relative to their share of the relevant liquidity pool.
 
-We are in the process of migrating this reward scheme to a fork of Masterchef, as detailed in [this proposal](https://forum.indexed.finance/t/proposal-dynamic-reward-emission-schedule/510) - if adopted, this will begin a flexible two-year schedule that allows the DAO to best incentivise those pools that require additional liquidity.
+We have migrated our reward scheme to a fork of Masterchef V2, which will run until mid-2023, emitting 1.5 million NDX via a linearly decreasing emission rate. Details of the rewards program can be found [here](https://ndxfi.medium.com/introducing-the-extended-ndx-liquidity-mining-program-ae30a0470001).
 
 ### I Hold {X} - Why Can't I Stake It For Rewards?
 
-The most likely cause of this is that you're trying to stake the 'pure' token (such as DEFI5), rather than the equivalent Uniswap liquidity provider (LP) token, e.g. DEFI5-ETH.
+The most likely cause of this is that you're trying to stake the 'pure' token (such as ORCL5), rather than the equivalent Uniswap liquidity provider (LP) token, e.g. DEFI5-ETH.
 
 If you're unfamiliar with the process of providing liquidity, please read [this article](https://defiprime.com/uniswap-liquidity-pools). Be sure you're absolutely certain what you're doing before you engage in staking.
 
@@ -79,7 +80,7 @@ When minting new index tokens, you have three options:
 
 ### What Is This 'Swap Fee'? Do I Have To Pay It?
 
-If you opt for the first option above, you will _not_ have to pay the 2.5% swap fee - you are providing the underlying assets in the correct amounts, and will not trigger a swap within the pool to rebalance the weightings therein.
+If you opt for the first option above, you will _not_ have to pay the 2% swap fee - you are providing the underlying assets in the correct amounts, and will not trigger a swap within the pool to rebalance the weightings therein.
 
 In the latter two cases, the swap fee applies. This fee is designed to lessen the impact and frequency of arbitrageurs, and is distributed to liquidity providers of the pool - namely, the existing index token holders. This is how the simple act of holding an index token becomes a form of passive investment, over and above the value gained - or lost - based on the performance of the index assets themselves.
 
