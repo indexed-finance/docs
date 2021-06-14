@@ -4,7 +4,7 @@ If you hold NDX tokens, you have a voice when it comes to decisions made by the 
 
 In this section, we'll cover the various ways in which you can utilize that voice.
 
-_Last update: 26 April 2021_
+_Last update: 14 June 2021_
 
 ## The Overall Process
 
@@ -70,7 +70,7 @@ Beyond the fact that it's free to interact with, there are two other major benef
 
 We do not consider Snapshot polls to have the same binding quorum levels as required by Governor Alpha, as Snapshot cannot - by definition of being off-chain - trigger changes to the protocol. Rather, we use Snapshot polls as a gauge for whether or not an on-chain vote would be successful.
 
-**Note**: we are currently working on producing a fork of Snapshot that allows voters to cast equal-weight votes for *multiple* poll choices simultaneously, a notable omission from Snapshot as it currently stands. Development has concluded for this, and these docs will be updated as appropriate when it is deployed.
+**Note**: we have recently released a fork of Snapshot that allows you to cast equal-weight votes for *multiple* poll choices simultaneously, a notable omission from Snapshot as it currently stands. It is currently available [here](https://ndx-multisnapshot.herokuapp.com/), and is being tested with some non-binding polls.
 
 ## When Can't You Vote?
 

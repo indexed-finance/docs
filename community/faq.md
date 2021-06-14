@@ -6,7 +6,7 @@ This is an evolving document, and we'll be adding/editing it as questions come t
 
 If you want to see something added here - come to [our Discord](https://discord.gg/jaeSTNPNt9) and ask us!
 
-*Last update: 23 April 2021*
+*Last update: 14 June 2021*
 
 ## The Indexed Platform
 
@@ -31,8 +31,11 @@ At present, we have six indices available for purchase, with the following descr
 * [ORCL5](https://www.coingecko.com/en/coins/oracle-top-5-index) - an index representing the current market leaders in protocols designed to bring external data onto the blockchain,
 * [DEGEN](https://www.coingecko.com/en/coins/degen-index) - a higher risk/reward index of promising Ethereum protocols that have significant room to grow,
 * [NFTP](https://www.coingecko.com/en/coins/nft-platform-index) - a collectors index of governance and protocol tokens drawn from both the NFT space and the wider Metaverse
-* [ERROR](https://www.coingecko.com/en/coins/484-fund) - a barbell-weighted fund tracking the favoured projects of [0xb1.484](https://etherscan.io/address/0xb1adceddb2941033a090dd166a462fe1c2029484), one of the largest capital providers in DeFi, and
 * [FFF](https://www.coingecko.com/en/coins/future-of-finance-fund) - a meta-index providing all-in-one exposure to Bitcoin and Ether (20% each), with the remainder weighted across DEFI5, CC10 and DEGEN using circulating market cap weightings.
+
+One index is due for imminent retirement from our UI due to lack of interest, and as such we do not advise the minting of new tokens:
+
+* [ERROR](https://www.coingecko.com/en/coins/484-fund) - a barbell-weighted fund tracking the favoured projects of [0xb1.484](https://etherscan.io/address/0xb1adceddb2941033a090dd166a462fe1c2029484), one of the largest capital providers in DeFi, and
 
 ### What _Are_ The Index Tokens, Really?
 
@@ -41,8 +44,6 @@ Fundamentally, the index tokens themselves represent fractional ownership of ass
 Each index has two 'groupings': the current constituent list - those tokens that are currently _active_ within the associated Balancer pool - and a secondary 'candidate' list of tokens waiting on the sidelines, ready to be switched in if an active member underperforms relative to the others, or if a particular candidate's performance justifies its inclusion.
 
 Periodically, the target weights of members of the pools are recalculated on-chain (dependent on the weighting strategy associated with a given index), and occasional reindexes evaluate the list of all current and potential members to determine if membership of the current list needs to be adjusted due to shifts in performance of all tokens.
-
-At present, our weighting strategies are all based on the square root of market-capitalisations (either fully diluted or circulating). As time goes on, we will introduce a wider range of strategies, enabling a pick-and-mix style of financial instrument creation.
 
 ### Who Owns The Underlying Assets?
 
@@ -60,7 +61,7 @@ We have migrated our reward scheme to a fork of Masterchef V2, which will run un
 
 ### I Hold {X} - Why Can't I Stake It For Rewards?
 
-The most likely cause of this is that you're trying to stake the 'pure' token (such as ORCL5), rather than the equivalent Uniswap liquidity provider (LP) token, e.g. DEFI5-ETH.
+The most likely cause of this is that you're trying to stake the 'pure' token (such as ORCL5), rather than the equivalent Uniswap liquidity provider (LP) token, e.g. DEFI5-ETH. However, you _can_ stake certain index tokens 'single-sided': at present, these are DEFI5, CC10 and DEGEN.
 
 If you're unfamiliar with the process of providing liquidity, please read [this article](https://defiprime.com/uniswap-liquidity-pools). Be sure you're absolutely certain what you're doing before you engage in staking.
 
@@ -76,7 +77,7 @@ When minting new index tokens, you have three options:
 
 * Provide each of the underlying tokens within the pool.
 * Provide _one_ of the underlying tokens within the pool.
-* Use the Mint Through Uniswap option on the appropriate page, routing an asset into an underlying component in order to mint.
+* Use the Mint option on the appropriate page, routing an asset into an underlying component in order to mint.
 
 ### What Is This 'Swap Fee'? Do I Have To Pay It?
 
@@ -88,7 +89,7 @@ Note that minting is a fairly gas-intensive operation, and is not recommended fo
 
 ### What About Burning Index Tokens And Burning Fees?
 
-It's possible to 'burn' index tokens either into their underlying components or directly to ETH. This means you can always exit your index positions regardless of the liquidity of the index.
+It's possible to 'burn' index tokens either into their underlying components or directly to, e.g. ETH or DAI. This means you can always exit your index positions regardless of the liquidity of the index.
 
 Burning index tokens incurs an exit fee of 0.5% of the amount burned. In practice, these fees do not impact traders who are just market selling index tokens rather than burning them. Rather, they offset the potential profit margins of arbitrageurs (a fractional subset of the overall users of the Indexed protocol) that seek to profit from differences between the net asset value and the market price of the ETF. These fees are a source of revenue for Indexed and have thus far been routed to the Indexed DAO Treasury, pending distribution to NDX holders upon the introduction of staking.
 
@@ -96,4 +97,4 @@ Burning index tokens incurs an exit fee of 0.5% of the amount burned. In practic
 
 The supply of each index token itself is _elastic_ - users of the platform can either mint more by providing the underlying tokens, or burn them back into their underlyings at the current weightings within the pool.
 
-If sufficient amounts of an ETF token are being purchased via locations such as Uniswap to drive the price over the Net Asset Value of its constituents, arbitrageurs can bring this back into line by minting more tokens and selling them on the marketplace. Likewise, if a token's price has dropped below its NAV, arbitrageurs burn the relevant index token and sell the constituent assets for a profit.
+If sufficient amounts of an ETF token are being purchased via locations such as Uniswap, Sushiswap or Quickswap to drive the price over the Net Asset Value of its constituents, arbitrageurs can bring this back into line by minting more tokens and selling them on the marketplace. Likewise, if a token's price has dropped below its NAV, arbitrageurs burn the relevant index token and sell the constituent assets for a profit.

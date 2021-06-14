@@ -4,7 +4,7 @@ If you've spent any time on our Discord server, or reading our Twitter account, 
 
 On this page, we'll quickly explain what the Sigma program aims to do, how it does it, what powers are available to it, and who currently holds the keys.
 
-*Last update: 29 April 2021*
+*Last update: 14 June 2021*
 
 ## Introduction
 
@@ -65,17 +65,13 @@ Note that if you provide a list of tokens that is larger than the number to be a
 Examples of successful applications made in this manner are:
   * [The DEGEN Index](https://forum.indexed.finance/t/application-for-the-degen-index/85) ($DEGEN)
   * [The 484 Fund](https://forum.indexed.finance/t/application-for-484-fund-error/583/) ($ERROR)
-
-Pending applications utilising this framework:
   * [The Future Of Finance Fund](https://forum.indexed.finance/t/proposal-the-future-of-finance-fund-fff/625) ($FFF)
 
 ## Liquidity Mining
 
-Separate to the long-term liquidity mining proposal [currently being discussed by the DAO](https://forum.indexed.finance/t/proposal-update-ndx-emissions-schedule/639/), the Sigma committee has been granted 600,000 NDX tokens to allocate as staking rewards, in order to quickly get sufficient liquidity into an AMM so that we can both gauge the appetite for new indices and measure their performance as market-traded instruments.
+All NDX liquidity mining has been rolled into a single fork of Masterchef V2, which covers both single-sided staking, core pools and Sigma pools.
 
-The amount of NDX allocated as rewards to newly created pools is left to the Sigma committee, and is impacted by predicted appeal, the number of tokens in the active pool (more tokens leads to more impermanent loss) and any initial liquidity commitments made by the proposer.
-
-Note that as a security measure, there is a one-week timelock in place for the Sigma committee to move any of these tokens to a staking contract for a newly-created LP pair.
+The details of the liquidity mining program can be found [here](https://ndxfi.medium.com/introducing-the-extended-ndx-liquidity-mining-program-ae30a0470001), and the staking page itself can be found [here](https://indexed.finance/staking) - to ensure that your balances show up correctly, please make sure that your wallet is connected (top-right of the app) and that you're on Ethereum main-net.
 
 ## The Circuit Breaker
 
