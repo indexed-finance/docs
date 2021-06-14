@@ -1,6 +1,6 @@
 # Security
 
-Because of limited availability, the NDX contracts have not been audited by an established security firm; however, the core contracts have been audited by two independent security experts: Daniel Luca, a former auditor for Consensys diligence, and Mudit Gupta, the lead blockchain engineer at Polymath.
+Because of limited availability, the NDX contracts have not been audited by an established security firm; however, the core contracts have been audited by two independent security experts: Daniel Luca, a former auditor for Consensys diligence, and Mudit Gupta, previously the lead blockchain engineer at Polymath.
 - [Daniel Luca's Audit Report](https://github.com/monoceros-alpha/audit-indexed-finance-2020-10)
 - [Mudit Gupta's Audit Report](https://github.com/maxsam4/indexed-finance-review)
 
