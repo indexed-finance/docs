@@ -86,6 +86,12 @@ In the latter two cases, the swap fee applies. This fee is designed to lessen th
 
 Note that minting is a fairly gas-intensive operation, and is not recommended for small amounts - you may well end up paying as much (or more) in gas than you receive by way of index tokens.
 
+### What About Burning Index Tokens And Burning Fees?
+
+It's possible to 'burn' index tokens either into their underlying components or directly to ETH. This means you can always exit your index positions regardless of the liquidity of the index.
+
+Burning index tokens incurs an exit fee of 0.5% of the amount burned. In practice, these fees do not impact traders who are just market selling index tokens rather than burning them. Rather, they offset the potential profit margins of arbitrageurs (a fractional subset of the overall users of the Indexed protocol) that seek to profit from differences between the net asset value and the market price of the ETF. These fees are a source of revenue for Indexed and have thus far been routed to the Indexed DAO Treasury, pending distribution to NDX holders upon the introduction of staking.
+
 ### Why Is The Total Supply Of {X} Always Changing?
 
 The supply of each index token itself is _elastic_ - users of the platform can either mint more by providing the underlying tokens, or burn them back into their underlyings at the current weightings within the pool.
