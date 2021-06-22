@@ -24,7 +24,7 @@ Exit fees are only charged when burning index tokens into their underlying compo
 
 For the sake of addressing any centralization concerns, note that we cannot actually shut down the underlying asset pool. Anyone will always be free to mint or burn any of our indices via the underlying contract, and anyone is able to update the appropriate oracle and adjust weightings in all of our products. Therefore, burning indices is a mechanism by which anyone can _always_ exit their index positions and redeem the underlying assets, regardless of whether liquidity for a given index exists or not in the markets.
 
-**Exit fees are 0.5%** for all our indices. These are generate revenue which is currently routed to the Indexed [treasury](https://etherscan.io/address/0x78a3ef33cf033381feb43ba4212f2af5a5a0a2ea), and soon will start to be distributed to [$NDX](https://www.coingecko.com/en/coins/indexed-finance) token holders via the [upcoming $dNDX token](https://forum.indexed.finance/t/create-dndx-a-dividends-token-for-indexed-fee-revenue/610).
+**Exit fees are 0.5%** for all our indices. These generate revenue which is currently routed to the Indexed [treasury](https://etherscan.io/address/0x78a3ef33cf033381feb43ba4212f2af5a5a0a2ea), and soon will start to be distributed to [$NDX](https://www.coingecko.com/en/coins/indexed-finance) token holders via the [upcoming $dNDX token](https://forum.indexed.finance/t/create-dndx-a-dividends-token-for-indexed-fee-revenue/610).
 
 ## Summary
 
