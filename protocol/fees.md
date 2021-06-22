@@ -40,7 +40,7 @@ The following table summarizes actions which incur fees for users of the Indexed
 | Burning via router (to ETH, DAI or USDC)    | ✅       | ✅       |           2.5 |
 | Internal trades with the AMM pool           | ✅       | ❌       |             2 |
 
-And here's our we compare to several of the other decentralized index providers on Ethereum:
+And here's how we compare to several of the other decentralized index providers on Ethereum:
 
 | Fee type (%) | Indexed Finance (NDX) | Index Coop (INDEX) | PieDAO (DOUGH) | Powerpool (CVP) | Cryptex (CTX) | BasketDAO (BASK) |
 |--------------|-----------------------|--------------------|----------------|-----------------|---------------|------------------|
