@@ -10,7 +10,7 @@ With this in mind, let's look at the types fees we _do_ charge.
 
 Swap fees are paid by traders when they _swap_ assets within index pools. The incentives to do so are either low-slippage token swaps, or profiting from arbitrage opportunities between pools and the open market. These fees accrue to the index holders as a form of passive yield, offsetting impermanent loss (recall that holding Indexed indices is essentially providing liquidity to an underlying AMM balancer pool).
 
-As mentioned above, market buying indexed tokens incurs no fees. However, when buying large amounts (e.g > $10,000), slippage costs might be significant. Therefore, you might be better off minting the liquidity pool (LP) tokens corresponding to the desired index. Minting does not incur swap fees if you provide all the underlying pool tokens in the weights suggested by the UI, but does if you provide only one of the underlying tokens, or mint via the router using ETH, DAI or USDC. The two latter options can be quite gas intensive, and should only be considered for buys greater than US$10,000.
+As mentioned above, market buying index tokens incurs no fees. However, when buying large amounts (e.g > $10,000), slippage costs might be significant. Therefore, you might be better off minting the liquidity pool (LP) tokens corresponding to the desired index. Minting does not incur swap fees if you provide all the underlying pool tokens in the weights suggested by the UI, but does if you provide only one of the underlying tokens, or mint via the router using ETH, DAI or USDC. The two latter options can be quite gas intensive, and should only be considered for buys greater than US$10,000.
 
 Similarly, _burning_ indices (see [below](#exit-fees)) to one of their underlying components or to ETH, DAI or USDC also triggers internal swaps, and therefore incurs swap fees.
 
@@ -49,4 +49,4 @@ And here's our we compare to several of the other decentralized index providers 
 | Exit         | 0.5                   | 0 - 0.1            | -              | 0.1             | 1             | 5                |
 | Management   | -                     | 0.95 - 1.95        | 0 - 1          | -               | -             | -                |
 
-_(Values accurate to the best of our knowledge as of June 19th, 2021. Sources: documentation of the various protocols, etherscan)_
+_(Values accurate to the best of our knowledge as of June 19th, 2021. Sources: documentation of the various protocols, Etherscan)_
