@@ -3,6 +3,7 @@
 ## Introduction
 
 * [FAQs](community/faq.md)
+* [Fees](protocol/fees.md)
 
 ## Day-To-Day Operations
 
