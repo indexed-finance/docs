@@ -27,7 +27,7 @@ $$ -->
 
 The typical method for rebalancing a token portfolio is to sell and purchase sufficient amounts of each asset to reach the desired weights. This typically involves trading with on-chain exchanges or using an auction system. Any method of swapping on-chain to rebalance will cause some amount of loss for the pool, potentially quite a lot. On-chain exchanges are illiquid, and auctions on Ethereum [have a history of being exploited](https://forum.makerdao.com/t/black-thursday-response-thread/1433).
 
-Index pools rebalance themselves over time by creating small arbitrage opportunities that incentivize traders to gradually adjust token balances and weights. As tokens are swapped, their weights move slightly toward the targets set by the pool controller. This weight adjustment occurs at a maximum of once per hour in order to create small arbitrage opportunities over time that eventually bring the portfolio composition in line with the targets.
+Index pools rebalance themselves over time by incentivizing traders to gradually adjust token balances and weights. As tokens are swapped, their weights move slightly toward the targets set by the pool controller. These weight adjustments occurs at a maximum of once every thirty minutes in order, creating small arbitrage opportunities over time that eventually bring the portfolio composition in line with its desired weights.
 
 While this rebalancing process is not instantaneous, it is permissionless, it works for arbitrarily large pools, it is generally more gas efficient and it does not assume that the pool or its controller can access external liquidity to execute rebalances.
 
