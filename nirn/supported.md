@@ -1,18 +1,20 @@
 # Nirn Yield Aggregator Supported Assets
 
-*Last updated: 1 August 2021*
+*Last updated: 2 August 2021*
 
-This is not an exhaustive list: there are some UNI-V2 tokens that are ambigiously named that we need to track down.
+This is not an exhaustive list: there are some UNI-V2 tokens that we need to track down to fill out the whole thing.
 
-We'll codify this list further shortly to break it down into 'which assets are supported by how many protocols'.
+## Active Nirn Vaults
 
-In the meantime, however, enjoy!
+* [DAI](https://etherscan.io/address/0x5e9fc917871ac9e42d579cdd8f2055ed97ff7d2d) {6 Adapters}
+* [USDT](https://etherscan.io/address/0x53c07574276a4abef738d1929c8199e43b8436a2) {6 Adapters}
+* [WBTC](https://etherscan.io/address/0x2c895a91dd9ab2cdf7e08b609312e2450ae3fba3) {6 Adapters}
 
-* DAI
+## Assets Supported By Nirn (No Vault Yet)
+
 * ETH
 * TUSD
 * USDC
-* USDT
 * sUSD
 * BAT
 * LINK
@@ -21,7 +23,6 @@ In the meantime, however, enjoy!
 * MANA
 * ZRX
 * SNX
-* WBTC
 * BUSD
 * ENJ
 * REN
