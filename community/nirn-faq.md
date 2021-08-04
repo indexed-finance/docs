@@ -14,7 +14,7 @@ Each Nirn vault can split its capital among several lending markets, and does no
 
 ## I Love Whitepapers: Have You Got One?
 
-Yes we do! Please enjoy: [Nirn, A Compositional, Extensible and Permissionless Yield Aggregator (arXiv)](https://github.com/indexed-finance/nirn-whitepaper/blob/main/Nirn_Whitepaper.pdf).
+Yes we do! Please enjoy: [Nirn, A Compositional, Extensible and Permissionless Yield Aggregator](https://github.com/indexed-finance/nirn-whitepaper/blob/main/Nirn_Whitepaper.pdf).
 
 Note that as we integrate additional protocols, release the off-chain optimiser and generally improve upon the explanation in the aftermath of the launch, the paper version is liable to change. Changes to the paper are reflected in a version on the front page and a change-log.
 
@@ -52,6 +52,12 @@ The full list of assets that can have Nirn vaults created for them is available 
 
 {We'll fill this one out once the protocol is integrated into our website with some step-by-step instructions: we'll also likely film an Indexed Learn video about this exact topic quite soon. Stay tuned!}
 
+## I Made A Transaction When Depositing, But Nothing Happened?
+
+It's likely that your transaction approved the ability for the selected Nirn vault to transfer your token, rather than actually transferred it. This is a necessary step, and not one we can bundle up into a single action for you.
+
+The 'fix' is simple: execute the transfer again.
+
 ## Your List Says That The Asset I Want To Stake Is Supported, But I Don't See A Vault!
 
 Just because an asset is supported by Nirn doesn't mean that we've spent the gas to create a vault for it: there are a LOT of tokens captured in the dragnet of the protocols that we support.
@@ -85,6 +91,12 @@ Stay tuned, this page will be updated linking you to the appropriate repository 
 The default settings of Nirn vaults are such that a proposed rebalancing needs to produce at least a 5% improvement on the current APR of a vault in order to be considered valid.
 
 If you _have_ got a rebalancing that meets this criteria, it could well be that someone else just performed a rebalance before you: rebalances are only accepted every 60 minutes, in order to reduce the attack surface.
+
+## I Deposited/Withdrew X Tokens, And Some Wrapped Tokens Went To The Treasury - Why?
+
+Fees accrued within the vault are transferred to the Indexed Finance DAO upon every deposit or withdrawal.
+
+If you're concerned that you've received 'fewer' nTokens or underlying tokens than you'd expect to have done as a result, you haven't. What the vault has done is inflated the nToken supply (updating the conversion ratios appropriately) and treated the fee claim as a deposit of `fees_due` to a vault with a balance of `balance - fees_due`.
 
 ## I Have Other Questions, Help!
 
