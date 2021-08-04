@@ -108,6 +108,12 @@ The default settings of Nirn vaults are such that these types of rebalance need 
 
 If you _have_ got a rebalancing that meets this criteria, it could well be that someone else just performed a rebalance before you: weight/adapter rebalances are only accepted every 60 minutes, in order to reduce the attack surface.
 
+## Why Are All The Vaults Just Using A Single Protocol Right Now?
+
+When a vault is launched, it automatically assigns the entirety of the vault weight to the protocol that has the highest APR at the time of creation.
+
+Depending on how rates evolve (and the amount within a given vault), rebalances may either shift the protocol being utilised, or make use of multiple protocols simultaneously.
+
 ## I Deposited/Withdrew X Tokens, And Some Wrapped Tokens Went To The Treasury - Why?
 
 Fees accrued within the vault are transferred to the Indexed Finance DAO upon every deposit or withdrawal.

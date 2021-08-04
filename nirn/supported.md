@@ -1,6 +1,6 @@
 # Nirn Yield Aggregator Supported Assets
 
-*Last updated: 2 August 2021*
+*Last updated: 4 August 2021*
 
 This is not an exhaustive list: there are some UNI-V2 tokens that we need to track down to fill out the whole thing.
 
@@ -9,6 +9,7 @@ This is not an exhaustive list: there are some UNI-V2 tokens that we need to tra
 * [DAI](https://etherscan.io/address/0x5e9fc917871ac9e42d579cdd8f2055ed97ff7d2d) {6 Adapters}
 * [USDT](https://etherscan.io/address/0x53c07574276a4abef738d1929c8199e43b8436a2) {6 Adapters}
 * [WBTC](https://etherscan.io/address/0x2c895a91dd9ab2cdf7e08b609312e2450ae3fba3) {6 Adapters}
+* [AAVE](https://etherscan.io/address/0x01be9b61ffb826bbe29f1e7493b230bf865de67a) {4 Adapters}
 
 ## Assets Supported By Nirn (No Vault Yet)
 
@@ -27,7 +28,6 @@ This is not an exhaustive list: there are some UNI-V2 tokens that we need to tra
 * ENJ
 * REN
 * YFI
-* AAVE
 * UNI
 * CRV
 * GUSD
