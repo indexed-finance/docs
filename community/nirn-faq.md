@@ -40,7 +40,7 @@ This is true, it's in the name. With that said, our goal is to assist with all f
 
 The core reason that Nirn exists is to ultimately integrate the nTokens provided by the vaults as proxy assets within our [index pools](). Most of the assets within our pools - such as the DEFI5 - can be loaned on most protocols, and it is a wasted opportunity for those assets to simply sit in a Balancer pool to act as liquidity.
 
-Nirn is our solution to this: by representing UNI within an index as nUNI (Indexed Interest-Bearing UNI), tokens such as DEFI5 become _interest-bearing_: they pay YOU, rather than having you pay a streaming or management fee for holding them.
+Nirn is our solution to this: by representing UNI within an index as nUNI (Indexed UNI), tokens such as DEFI5 become _interest-bearing_: they pay YOU, rather than having you pay a streaming or management fee for holding them.
 
 Once we integrate Nirn into our indices, we'll make sure that we aren't building a walled garden: you'll still be able to mint index tokens from the standard asset such as, e.g. UNI, and burn index tokens back into the same. The nToken administration will be dealt with internally.
 
@@ -72,7 +72,7 @@ Similarly, should the DAO choose to, it can vote to remove the protocol adapter 
 
 ## A New Lending Market Has Opened Up For An Asset On A Supported Protocol. Can We Integrate It?
 
-Yes! This is simple for us to do - one of the requirements of our protocol adapters is the ability to list supported markets. If a new market opens up on an existing protocol, the appropriate protocol adapter can 
+Yes! This is simple for us to do - one of the requirements of our protocol adapters is the ability to list supported markets. If a new market opens up on an existing protocol, the appropriate protocol adapter can deploy a new token adapter, exposing the vault to the new market.
 
 ## The Asset I Want To Lend Only Has A Market On One Protocol. Should I Use Nirn?
 
