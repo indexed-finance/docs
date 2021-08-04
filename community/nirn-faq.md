@@ -72,7 +72,7 @@ Similarly, should the DAO choose to, it can vote to remove the protocol adapter 
 
 ## A New Lending Market Has Opened Up For An Asset On A Supported Protocol. Can We Integrate It?
 
-Yes! This is simple for us to do - one of the requirements of our protocol adapters is the ability to list supported markets. If a new market opens up on an existing protocol, the appropriate protocol adapter can 
+Yes! This is simple for us to do - one of the requirements of our protocol adapters is the ability to list supported markets. If a new market opens up on an existing protocol, the appropriate protocol adapter can deploy a new token adapter, exposing the vault to the new market.
 
 ## The Asset I Want To Lend Only Has A Market On One Protocol. Should I Use Nirn?
 
