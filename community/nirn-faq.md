@@ -40,7 +40,7 @@ This is true, it's in the name. With that said, our goal is to assist with all f
 
 The core reason that Nirn exists is to ultimately integrate the nTokens provided by the vaults as proxy assets within our [index pools](). Most of the assets within our pools - such as the DEFI5 - can be loaned on most protocols, and it is a wasted opportunity for those assets to simply sit in a Balancer pool to act as liquidity.
 
-Nirn is our solution to this: by representing UNI within an index as nUNI (Indexed Interest-Bearing UNI), tokens such as DEFI5 become _interest-bearing_: they pay YOU, rather than having you pay a streaming or management fee for holding them.
+Nirn is our solution to this: by representing UNI within an index as nUNI (Indexed UNI), tokens such as DEFI5 become _interest-bearing_: they pay YOU, rather than having you pay a streaming or management fee for holding them.
 
 Once we integrate Nirn into our indices, we'll make sure that we aren't building a walled garden: you'll still be able to mint index tokens from the standard asset such as, e.g. UNI, and burn index tokens back into the same. The nToken administration will be dealt with internally.
 
