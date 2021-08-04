@@ -1,6 +1,6 @@
 # Yield Aggregator Vaults FAQ
 
-*Last update: 1 August 2021*
+*Last update: 4 August 2021*
 
 ## What Is Nirn, Exactly?
 
@@ -80,17 +80,33 @@ In the interests of honesty: no. Nirn vaults charge a default fee of 10% of the 
 
 _However_, if you know that new markets are opening up for your asset on protocols that are supported by Nirn (or there's a new protocol starting up that will: see above), then you _might_ be justified in utilising a Nirn vault. Your mileage may vary!
 
-## I'm Not Very Technical - Do I Have To Wait For Someone To Rebalance A Vault For Me?
+## What Are The Differences Between The Types Of Rebalancing?
 
-Not necessarily! Shortly after launch, we'll be releasing an off-chain optimiser that can determine whether a rebalancing can be done (and submit one if it can), and you'll be able to run this yourself for your preferred vault/s!
+There are three types of rebalancing:
+
+* A 'plain' rebalance,
+* A weight rebalance, and
+* A weight and adapter rebalance
+
+The first type of rebalance is a rebalance that puts any capital in excess of the current reserve ratio (default 10%) of deposited assets to work through the currently defined protocols at the currently defined weightings.
+
+The latter two are more refined, and involve adjusting the ratios for which capital is deployed to different supported protocols. For most of you reading this, you'll likely only ever invoke a plain rebalance, if at all.
+
+Newly deposited assets sit within a vault as liquid capital until such time as a plain rebalance is called: this is to reduce the average gas cost of a deposit or withdrawal, but it's worth remembering that if you've deposited assets and want to immediately put them to work, you need to subsequently trigger a plain rebalance.
+
+## I'm Not Very Technical - Do I Have To Wait For Someone To Perform A Weight/Adapter Rebalance A Vault For Me?
+
+To start with, yes: if you don't have the technical knowledge to work this out yourself.
+
+However, this won't be the case for long: we'll soon be releasing an off-chain optimiser that can determine whether a rebalancing can be made (and submit one if it can), and you'll be able to run this yourself for your preferred vault/s!
 
 Stay tuned, this page will be updated linking you to the appropriate repository and documentation when it's available!
 
-## I Proposed A Rebalance, And It Wasn't Accepted. Why?
+## I Proposed A Weight/Adapter Rebalance, And It Wasn't Accepted. Why?
 
-The default settings of Nirn vaults are such that a proposed rebalancing needs to produce at least a 5% improvement on the current APR of a vault in order to be considered valid.
+The default settings of Nirn vaults are such that these types of rebalance need to produce at least a 5% improvement on the current APR of a vault in order to be considered valid.
 
-If you _have_ got a rebalancing that meets this criteria, it could well be that someone else just performed a rebalance before you: rebalances are only accepted every 60 minutes, in order to reduce the attack surface.
+If you _have_ got a rebalancing that meets this criteria, it could well be that someone else just performed a rebalance before you: weight/adapter rebalances are only accepted every 60 minutes, in order to reduce the attack surface.
 
 ## I Deposited/Withdrew X Tokens, And Some Wrapped Tokens Went To The Treasury - Why?
 
