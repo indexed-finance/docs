@@ -12,11 +12,11 @@ Conceptually, Nirn is similar to Yearn's iTokens, Rari's yield pools and Idle Fi
 
 Each Nirn vault can split its capital among several lending markets, and does not use permissioned rebalancer accounts to determine how it is split. Instead, optimal allocations can be calculated off-chain by anyone and suggested to the vault contract, which then verifies that the suggested rebalance would increase the vault's net interest rate. This both prevents any reliance on the developers of Indexed and ensures that if a better allocation of capital is possible, anyone can make the vault use it.
 
-## I Just Love Whitepapers: Have You Got One?
+## I Love Whitepapers: Have You Got One?
 
-Yes we do! Please enjoy: [Nirn, A Compositional, Extensible and Permissionless Yield Aggregator (arXiv)](). {Still pending upload to arXiv!}
+Yes we do! Please enjoy: [Nirn, A Compositional, Extensible and Permissionless Yield Aggregator (arXiv)](https://github.com/indexed-finance/nirn-whitepaper/blob/main/Nirn_Whitepaper.pdf).
 
-Note that as we integrate additional protocols, release the off-chain optimiser and generally improve upon the explanation in the aftermath of the launch, the paper version is liable to change. Changes to the paper are reflected in a version on the front page and a change-log, both on arXiv and the paper itself.
+Note that as we integrate additional protocols, release the off-chain optimiser and generally improve upon the explanation in the aftermath of the launch, the paper version is liable to change. Changes to the paper are reflected in a version on the front page and a change-log.
 
 ## When Would Nirn Be Helpful For Me?
 
