@@ -3,6 +3,8 @@
 ## Introduction
 
 * [FAQs](community/faq.md)
+  * [Index Pools](community/pool-faq.md)
+  * [Yield Aggregator Vaults](community/nirn-faq.md)
 * [Fees](protocol/fees.md)
 
 ## Day-To-Day Operations
@@ -12,7 +14,7 @@
 
 ## Technical Details
 
-### Protocol
+### Index Pool Protocol
 
 * [Terminology](protocol/terminology.md)
 * [Governance](protocol/governance.md)
@@ -23,7 +25,7 @@
   * [Bootstrapping New Tokens](protocol/rebalancing/adding-tokens.md)
   * [Removing Tokens](protocol/rebalancing/removing-tokens.md)
 
-### Smart Contracts
+### Index Pool Smart Contracts
 
 * [Deployments](smart-contracts/deployments.md)
 * [IndexPool.sol](smart-contracts/pool.md)
@@ -40,3 +42,11 @@
 * [Interfaces](smart-contracts/interfaces/index.md)
   * [IIndexPool.sol](smart-contracts/interfaces/IIndexPool.md)
   * [IFlashLoanRecipient.sol](smart-contracts/interfaces/IFlashLoanRecipient.md)
+
+### Yield Aggregator Protocol
+
+* [Supported Assets](nirn/supported.md)
+
+### Yield Aggregator Smart Contracts
+
+-
