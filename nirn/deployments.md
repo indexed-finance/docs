@@ -6,6 +6,10 @@
 
 [0x5f2945604013ee9f80ae2eddb384462b681859c4](https://etherscan.io/address/0x5f2945604013ee9f80ae2eddb384462b681859c4#code)
 
+## Nirn Vault Factory
+
+[0x0Cd08613dc6b04a7a58472f88791BE24C48be52E](https://etherscan.io/address/0x0Cd08613dc6b04a7a58472f88791BE24C48be52E#code)
+
 ## Protocol Adapters
 
 | Protocol      | Link |
