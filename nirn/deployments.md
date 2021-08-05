@@ -27,5 +27,6 @@
 | ----- | ---- |
 | AAVE | [0x01be9b61ffb826bbe29f1e7493b230bf865de67a](https://etherscan.io/address/0x01be9b61ffb826bbe29f1e7493b230bf865de67a#code) |
 | DAI  | [0x5e9fc917871ac9e42d579cdd8f2055ed97ff7d2d](https://etherscan.io/address/0x5e9fc917871ac9e42d579cdd8f2055ed97ff7d2d#code) |
+| SUSHI | [0xfdf82594b24a1fe0e001319207fef04ee52925ba](https://etherscan.io/address/0xfdf82594b24a1fe0e001319207fef04ee52925ba#code) |
 | USDT | [0x53c07574276a4abef738d1929c8199e43b8436a2](https://etherscan.io/address/0x53c07574276a4abef738d1929c8199e43b8436a2#code) |
 | WBTC | [0x2c895a91dd9ab2cdf7e08b609312e2450ae3fba3](https://etherscan.io/address/0x2c895a91dd9ab2cdf7e08b609312e2450ae3fba3#code) |
