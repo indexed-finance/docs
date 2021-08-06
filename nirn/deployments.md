@@ -1,6 +1,6 @@
 # Smart Contract Deployments
 
-*Last updated: 5 August 2021*
+*Last updated: 6 August 2021*
 
 ## Adapter Registry
 
@@ -23,10 +23,10 @@
 
 ## Asset Vaults
 
-| Asset | Link |
-| ----- | ---- |
-| AAVE | [0x01be9b61ffb826bbe29f1e7493b230bf865de67a](https://etherscan.io/address/0x01be9b61ffb826bbe29f1e7493b230bf865de67a#code) |
-| DAI  | [0x5e9fc917871ac9e42d579cdd8f2055ed97ff7d2d](https://etherscan.io/address/0x5e9fc917871ac9e42d579cdd8f2055ed97ff7d2d#code) |
-| SUSHI | [0xfdf82594b24a1fe0e001319207fef04ee52925ba](https://etherscan.io/address/0xfdf82594b24a1fe0e001319207fef04ee52925ba#code) |
-| USDT | [0x53c07574276a4abef738d1929c8199e43b8436a2](https://etherscan.io/address/0x53c07574276a4abef738d1929c8199e43b8436a2#code) |
-| WBTC | [0x2c895a91dd9ab2cdf7e08b609312e2450ae3fba3](https://etherscan.io/address/0x2c895a91dd9ab2cdf7e08b609312e2450ae3fba3#code) |
+| Asset | Vault | Underlying |
+| ----- | ---- | ---- |
+| AAVE | [0x01be9b61ffb826bbe29f1e7493b230bf865de67a](https://etherscan.io/address/0x01be9b61ffb826bbe29f1e7493b230bf865de67a#code) | [0x7fc66500c84a76ad7e9c93437bfc5ac33e2ddae9](https://etherscan.io/address/0x7fc66500c84a76ad7e9c93437bfc5ac33e2ddae9) |
+| DAI  | [0x5e9fc917871ac9e42d579cdd8f2055ed97ff7d2d](https://etherscan.io/address/0x5e9fc917871ac9e42d579cdd8f2055ed97ff7d2d#code) | [0x6b175474e89094c44da98b954eedeac495271d0f](https://etherscan.io/address/0x6b175474e89094c44da98b954eedeac495271d0f) |
+| SUSHI | [0xfdf82594b24a1fe0e001319207fef04ee52925ba](https://etherscan.io/address/0xfdf82594b24a1fe0e001319207fef04ee52925ba#code) | [0x6b3595068778dd592e39a122f4f5a5cf09c90fe2](https://etherscan.io/address/0x6b3595068778dd592e39a122f4f5a5cf09c90fe2) |
+| USDT | [0x53c07574276a4abef738d1929c8199e43b8436a2](https://etherscan.io/address/0x53c07574276a4abef738d1929c8199e43b8436a2#code) | [0xdac17f958d2ee523a2206206994597c13d831ec7](https://etherscan.io/address/0xdac17f958d2ee523a2206206994597c13d831ec7) |
+| WBTC | [0x2c895a91dd9ab2cdf7e08b609312e2450ae3fba3](https://etherscan.io/address/0x2c895a91dd9ab2cdf7e08b609312e2450ae3fba3#code) | [0x2260fac5e5542a773aa44fbcfedf7c193bc2c599](https://etherscan.io/address/0x2260fac5e5542a773aa44fbcfedf7c193bc2c599) |
