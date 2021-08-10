@@ -1,6 +1,6 @@
 # Yield Aggregator Vaults FAQ
 
-*Last update: 4 August 2021*
+*Last update: 10 August 2021*
 
 ## What Is Nirn, Exactly?
 
@@ -96,11 +96,9 @@ Newly deposited assets sit within a vault as liquid capital until such time as a
 
 ## I'm Not Very Technical - Do I Have To Wait For Someone To Perform A Weight/Adapter Rebalance A Vault For Me?
 
-To start with, yes: if you don't have the technical knowledge to work this out yourself.
+If you've got the _bare-bones_ of technical know-how (i.e. you can install packages via `npm` and run commands from a CLI), you can do this yourself with minimal effort via our off-chain optimiser.
 
-However, this won't be the case for long: we'll soon be releasing an off-chain optimiser that can determine whether a rebalancing can be made (and submit one if it can), and you'll be able to run this yourself for your preferred vault/s!
-
-Stay tuned, this page will be updated linking you to the appropriate repository and documentation when it's available!
+It's available [here](https://github.com/indexed-finance/nirn-optimiser), and is sufficiently documented so as to get you from zero to running smoothly by yourself: the most complex thing you'll need to do is get your own Infura API key.
 
 ## I Proposed A Weight/Adapter Rebalance, And It Wasn't Accepted. Why?
 
