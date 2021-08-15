@@ -26,7 +26,7 @@ Here are the current members of the Sigma committee, along with their Discord us
 
 * Dillon Kellar: @d1ll0n#8888, [@d1ll0nk](https://twitter.com/d1ll0nk)
 * Lito Coen: @litocoen#7160, [@litocoen](https://twitter.com/litocoen)
-* Fikki Sadykhov: @Strategy#1694, N/A
+* Strategy: @Strategy#1694, N/A
 * Laurence E. Day: @Norsefire#1311, [@laurence_e_day](https://twitter.com/laurence_e_day)
 * blurr: @blurr#4511, N/A
 
