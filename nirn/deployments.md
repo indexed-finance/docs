@@ -10,6 +10,12 @@
 
 [0x0Cd08613dc6b04a7a58472f88791BE24C48be52E](https://etherscan.io/address/0x0Cd08613dc6b04a7a58472f88791BE24C48be52E#code)
 
+## Adapter Lens
+
+Enter underlying asset address in `getSuppportedProtocols` to see the list of available markets.
+
+[0x5E7AB52A1C244c0F377032F914Ac9cB3e855ba99](https://etherscan.io/address/0x5E7AB52A1C244c0F377032F914Ac9cB3e855ba99#code)
+
 ## Protocol Adapters
 
 | Protocol      | Link |
