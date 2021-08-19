@@ -16,7 +16,7 @@ New tokens added to the pool must be assigned a minimum balance which is roughly
 
 In order to rebalance through internal swaps, Indexed uses a *desired weight* ($$D_t$$) parameter which defines the target weight for an asset. If a desired weight is higher than the actual weight, the pool should increase its balance in that token. If the desired weight is lower than the actual weight, the pool should decrease its balance in that token.
 
-Each pool has a minimum update delay, which by default is 1 hour, and a weight change factor, which by default is 1%. 
+Each pool has a minimum update delay, which by default is 30 minutes, and a weight change factor, which by default is 1%. 
 
 If a token with a positive weight difference ($$D_t > W_t$$) is swapped into the pool and it has been more than the minimum delay period since its last weight change, the pool will increase that token's weight by either the weight change factor or the token's desired weight, whichever is less.
 
