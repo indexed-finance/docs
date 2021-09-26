@@ -2,10 +2,11 @@
 
 ## Introduction
 
-* [FAQs](community/faq.md)
+* [Product FAQs](community/faq.md)
   * [Index Pools](community/pool-faq.md)
   * [Yield Aggregator Vaults](community/nirn-faq.md)
 * [Fees](protocol/fees.md)
+* [Who We Are](protocol/whois.md)
 
 ## Day-To-Day Operations
 
