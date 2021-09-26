@@ -36,7 +36,7 @@ Our team is small, but we're open about wanting to grow. If you feel that you - 
 
 ### Part-Time
 
-#### 'Austinography'
+#### Ryan Austin
 
 * Role: Graphics Designer/Index Competition Maintainer
 * Twitter: @Austinography
@@ -53,7 +53,7 @@ Our team is small, but we're open about wanting to grow. If you feel that you - 
 
 ## Associated [Past And Present]
 
-### Sigma Committee
+### Sigma Committee [Liquidity/Asset Monitoring]
 
 #### Dr Fabio Nery
 
