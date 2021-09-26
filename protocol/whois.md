@@ -4,7 +4,7 @@ While Indexed Finance as a whole is a protocol that is governed by a DAO - allow
 
 We do not believe that the Indexed *site* is the best place to advertise specific identities - as this implies that Indexed is a startup rather than a DAO -, however we feel it's important that the community know who is actively contributing to the project, so this page provides some information about those whose hands are closest to the gears.
 
-Our team is small, but we're open about wanting to grow. If you feel that you - or someone that you know - would fit into a role that we're currently missing or lacking in, come and join us!
+Our team is small, but we're open about wanting to grow. If you feel that you - or someone that you know - would fit into a role that we're currently missing or lacking in, come introduce yourself on [Discord](https://discord.indexed.finance) and join us!
 
 ## Core
 
@@ -12,26 +12,26 @@ Our team is small, but we're open about wanting to grow. If you feel that you - 
 
 #### Dillon Kellar
 
-* Role: Protocol Founder, Solidity Developer, Sigma Committee
+* Role: Protocol Founder, Solidity Developer
 * Twitter: @d1ll0nk
-* Experience: Created L2 blockchains with Interstate Network and Dharma
-* Day-To-Day: working on all Solidity contracts underpinning protocol
+* Experience: Created L2 blockchains with Interstate Network and Dharma.
+* Day-To-Day: working on all Solidity contracts underpinning protocol.
 * Discord: d1ll0n#8888
 
-#### Dr Laurence Day
+#### Dr Laurence E. Day
 
 * Role: Operations/Communications
 * Twitter: @laurence_e_day
 * Experience: PhD compsci, MSc thesis on index optimisation, ex-TradFi risk analytics, ex-CRO at startup funded by Consensys and Algorand.
-* Day-To-Day: documentation, announcements, research, technical assistance, protocol maintenance
+* Day-To-Day: documentation, announcements, research, technical assistance, protocol maintenance.
 * Discord: Norsefire#1311
 
 #### Connor Bryan
 
 * Role: Front-end (React) Engineer
 * Twitter: [none]
-* Experience: ex-MyCrypto principal architect 
-* Day-To-Day: integrating protocol updates into UI, implementing community suggestions
+* Experience: ex-MyCrypto principal architect.
+* Day-To-Day: integrating protocol updates into UI, implementing community suggestions.
 * Discord: outruncolors#5456
 
 ### Part-Time
@@ -48,7 +48,7 @@ Our team is small, but we're open about wanting to grow. If you feel that you - 
 
 * Role: Marketing/Head of Indexed Growth Committee
 * Twitter: @litocoen
-* Experience: ex-growth at Paypal and SatoshiPay, current growth at Hop Protocol
+* Experience: ex-growth at Paypal and SatoshiPay, current growth at Hop Protocol.
 * Discord: litocoen#7160
 
 ## Associated [Past And Present]
@@ -94,19 +94,19 @@ Our team is small, but we're open about wanting to grow. If you feel that you - 
 #### 'PR0'
 
 * Role: Protocol Cofounder, Angel Investor
-* Status: periodic advice, no current day-to-day involvement
+* Status: periodic advice, no current day-to-day involvement.
 
 #### Samuel Gosling
 
 * Role: Initial UI Developer
-* Status: no current day-to-day involvement
+* Status: no current day-to-day involvement.
 
 #### Gilles Barnier
 
 * Role: Solidity Developer
-* Status: no current day-to-day involvement
+* Status: no current day-to-day involvement.
 
 #### Julien Bouteloup
 
 * Role: Technical Advisor, StakeDAO Point Of Contact
-* Status: no current day-to-day involvement
+* Status: no current day-to-day involvement.
