@@ -4,7 +4,7 @@ If you hold NDX tokens, you have a voice when it comes to decisions made by the 
 
 In this section, we'll cover the various ways in which you can utilize that voice.
 
-_Last update: 14 June 2021_
+_Last update: 4 October 2021_
 
 ## The Overall Process
 
@@ -43,11 +43,11 @@ Available on [this dashboard](https://www.withtally.com/governance/indexed/voter
 
 The way that on-chain proposals work is that a particular wallet can only vote with the weight of the tokens delegated to themselves at the block in which a proposal was created.
 
-This means that if you want to vote on an upcoming proposal, you _must_ delegate your tokens - either to yourself or someone else - before the proposal is created. If you have not yet performed any delegation by that time, you cannot vote.
+This means that if you want to vote on an upcoming proposal, you _must_ delegate your tokens - either to yourself or someone else - before the proposal is created. If you have not yet performed any delegation by that time, you _cannot vote_.
 
 Similarly, if you have already delegated your votes, but change the delegatee after a proposal is created, the new recipient will not be able to vote with your weight on that proposal: the right to vote remains with the previous delegatee.
 
-So, if you're new to the Indexed DAO, or you've been a member for a while but haven't delegated yet, it's important that you do so if you wish to exercise your right to vote.
+So, if you're new to the Indexed DAO, or you've been a member for a while but haven't delegated yet, it's important that you do so if you wish to exercise your right to vote on-chain.
 
 ## Do All Decisions Need To Be Made This Way?
 
@@ -58,19 +58,17 @@ A good rule of thumb is that if the question can reasonably be phrased in a way 
 * *Should* we establish an auction for selling 100,000 NDX to VC firms from the treasury?, or
 * *Should* the annual Indexed meetup happen in Miami or Vladivostok?
 
-These are questions that help establish direction, and for these, we utilize [Snapshot](https://docs.snapshot.org/), which enables gasless off-chain polling. 
+These are questions that help establish direction, and for these, we utilize [Snapshot](https://docs.snapshot.org/), which enables gasless (free) off-chain polling. 
 
 [View the Indexed Snapshot page here.](https://gov.indexed.finance/#/)
 
-We frequently use Snapshot polls as a *precursor* to putting on-chain proposals forward, as it doesn't cost anything for you to cast votes there. One thing to bear in mind, however, is that Snapshot simply takes a freeze-frame of how many tokens are held by which wallets at the creation time of a poll. As such, if you have delegated NDX tokens via Indexed Governor Alpha, this is _not taken into account_ by Snapshot: you must cast your votes yourself!
+We frequently use Snapshot polls as a *precursor* to putting on-chain proposals forward, as it doesn't cost anything for you to cast votes there. One thing to bear in mind, however, is that Snapshot simply takes a freeze-frame of how many tokens are held by you (or delegated to you) at the creation time of a poll.
 
 Beyond the fact that it's free to interact with, there are two other major benefits to Snapshot: 
 * Whereas Governor Alpha proposals are restricted to Yes or No options, Snapshot polls allow the proposer to put forward multiple responses (click [here](https://gov.indexed.finance/#/ndx.eth/proposal/QmcRHDdFqFbPyeJYKq9MDnSbECps6rNYbNk1W3r2g2Z91i) for an example).
-* Proposers only require a single NDX token to create a poll rather than the 100,000 NDX required by Governor Alpha, allowing a far wider group of participants to initiate discussions.
+* Proposers only require a single NDX token to create a poll rather than the 100,000 NDX required by Governor Alpha, allowing a far wider group of participants to initiate discussions and proposals.
 
 We do not consider Snapshot polls to have the same binding quorum levels as required by Governor Alpha, as Snapshot cannot - by definition of being off-chain - trigger changes to the protocol. Rather, we use Snapshot polls as a gauge for whether or not an on-chain vote would be successful.
-
-**Note**: we have recently released a fork of Snapshot that allows you to cast equal-weight votes for *multiple* poll choices simultaneously, a notable omission from Snapshot as it currently stands. It is currently available [here](https://ndx-multisnapshot.herokuapp.com/), and is being tested with some non-binding polls.
 
 ## When Can't You Vote?
 
@@ -80,13 +78,13 @@ When you stake NDX in a liquidity pool, such as NDX/ETH on Uniswap or NDX/BNT on
 
 If you own NDX tokens, it is worth weighing whether or not you wish to utilize them primarily for their voting capabilities or their ability to earn fees as liquidity.
 
-The core developer team informs the DAO in advance of any intended proposal submission, be it on or off-chain, so that those who are staking but may wish to vote have time to exit their positions and delegate appropriately. 
+The core developer team informs the DAO in the [Discord](https://discord.indexed.finance) in advance of any intended proposal submissions, be they on or off-chain, so that those who are staking but may wish to vote have time to exit their positions and delegate appropriately. 
 
 ### An Aside: The Best Of Both Worlds
 
-Indexed has been developing a protocol upgrade that will permit members of the DAO to stake their NDX tokens in exchange for [dNDX](https://forum.indexed.finance/t/create-dndx-a-dividends-token-for-indexed-fee-revenue/610), a dividend-bearing variant that is entitled to a pro-rata share of all protocol revenue.
+Indexed allows members of the DAO to stake their NDX tokens in exchange for [dNDX](https://etherscan.io/token/0x262cd9adce436b6827c01291b84f1871fb8b95a3), a dividend-bearing variant that is entitled to a pro-rata share of 60% of all protocol revenue. Holders of the NDX token can enter a timelock in exchange for dNDX via the Timelock webpage [here](https://indexed.finance/timelocks), and details about dNDX are available on [this Medium post](https://ndxfi.medium.com/ndx-is-now-a-productive-asset-fa375e3f8db0).
 
-This is not yet live, but NDX that is staked in this way will automatically delegate to stakers, allowing for both revenue generation and voting simultaneously.
+NDX that is entered into a timelock in this way is automatically delegated back to stakers, allowing for both revenue generation and on-chain voting simultaneously. Our Snapshot strategy accounts for both NDX tokens that have been delegated to you _and_ undelegated NDX that is within your wallet, so you can also use these locked tokens to vote off-chain via Snapshot.
 
 ## Metagovernance
 
