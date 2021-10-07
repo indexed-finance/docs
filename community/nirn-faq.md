@@ -14,7 +14,7 @@ Each Nirn vault can split its capital among several lending markets, and does no
 
 ## Is There A Whitepaper?
 
-Yes we do! Please enjoy: [Nirn, A Compositional, Extensible and Permissionless Yield Aggregator](https://github.com/indexed-finance/nirn-whitepaper/blob/main/Nirn_Whitepaper.pdf).
+Yes, there is! Please enjoy: [Nirn, A Compositional, Extensible and Permissionless Yield Aggregator](https://github.com/indexed-finance/nirn-whitepaper/blob/main/Nirn_Whitepaper.pdf).
 
 Note that as we integrate additional protocols, release the off-chain optimiser and generally improve upon the explanation in the aftermath of the launch, the paper version is liable to change. Changes to the paper are reflected in a version on the front page and a change-log.
 
