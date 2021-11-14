@@ -12,7 +12,7 @@
 ### 1. Connect your web3 wallet to the indexed.finance website (orders done this way will have a slightly higher spot price than the value of that index token, mint the index token for a better price)  
 ![swap](assets/usr_guide1.jpg)
 
-### 2. Click on the index pool you would like to invest in
+### 2. Click on the index pool you would like to put funds into
 ![swap](assets/usr_guide2.png)
 ### 3. Select the amount of index tokens you would like to swap for
 

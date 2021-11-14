@@ -10,9 +10,9 @@ If you want to see something added here - come to [our Discord](https://discord.
 
 ## The Indexed Platform
 
-The purpose of Indexed Finance is to provide financial products that help users invest in the various market sectors or groupings within the cryptocurrency space: primarily on Ethereum, although we intend to eventually branch out to synthetic stocks and wrapped assets across different blockchains.
+The purpose of Indexed Finance is to provide financial products that help users gain diversified exposure to the various market sectors or groupings within the cryptocurrency space: primarily on Ethereum, although we intend to eventually branch out to synthetics and wrapped assets across different blockchains.
 
-By providing these instruments, we aim to enable exposure to the wider cryptocurrency market to those who are interested in the sector but do not have the time or inclination to research which projects are worthy of their attention, or separate the signals from the noise in the wider market. They are intended to act as 'set and forgets' for the more passive investor.
+By providing these instruments, we aim to enable exposure to the wider cryptocurrency market to those who are interested in the sector but do not have the time or inclination to research which projects are worthy of their attention, or separate the signals from the noise in the wider market. They are intended to act as 'set and forgets' for the more passive market participant.
 
 At present we offer two distinct - but overlapping - products: index tokens, which represent portfolios of assets in various market sectors that are automatically reweighted and rebalanced over time, and Nirn - a collection of yield aggregator vaults that can have their assets split across several different lending protocols at once in order to maximise returns.
 

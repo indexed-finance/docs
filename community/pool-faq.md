@@ -29,9 +29,9 @@ We presented a talk about what Indexed pools are and how they operate at EthCC[4
 
 It's worth emphasising that the Indexed DAO itself does *not* control the assets that comprise the indices that we enable. They are kept within the Balancer pools themselves, and ownership of the assets is strictly limited to owners of the index tokens.
 
-### Do You Make Any Guarantees Regarding Funds I Invest Into An Index?
+### Do You Make Any Guarantees Regarding Funds I Place Into An Index?
 
-In short, no. Indices are superb instruments for gaining exposure to a large segment of a market at once, but they are subject to downturns just as much as any other asset or instrument. As with all crypto assets, do not invest more than you can afford to lose.
+In short, no. Indices are superb instruments for gaining exposure to a large segment of a market at once, but they are subject to downturns just as much as any other asset or instrument. As with all crypto assets, do not expose more than you can afford to lose.
 
 ## Staking And Rewards
 
@@ -57,7 +57,7 @@ When minting new index tokens, you have three options:
 
 If you opt for the first option above, you will _not_ have to pay the 2% swap fee - you are providing the underlying assets in the correct amounts, and will not trigger a swap within the pool to rebalance the weightings therein.
 
-In the latter two cases, the swap fee applies. This fee is designed to lessen the impact and frequency of arbitrageurs, and is distributed to liquidity providers of the pool - namely, the existing index token holders. This is how the simple act of holding an index token becomes a form of passive investment, over and above the value gained - or lost - based on the performance of the index assets themselves.
+In the latter two cases, the swap fee applies. This fee is designed to lessen the impact and frequency of arbitrageurs, and is distributed to liquidity providers of the pool - namely, the existing index token holders. This is how the simple act of holding an index token becomes a form of passive yield, over and above the value gained - or lost - based on the performance of the index assets themselves.
 
 Note that minting is a fairly gas-intensive operation, and is not recommended for small amounts - you may well end up paying as much (or more) in gas than you receive by way of index tokens.
 
