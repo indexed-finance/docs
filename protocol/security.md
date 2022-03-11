@@ -10,6 +10,4 @@ It is important for users to understand that the NDX governance organization has
 
 ## Warning
 
-This project is still in beta and we advise caution - please do not put more into our contracts than you are prepared to lose if a vulnerability is found and exploited.
-
-We are confident in the security of our contracts and have sought third-party opinions, but since the project is less than a year old and has not received extensive scrutiny from hackers (to our knowledge) or an auditing firm specialising in smart contracts, we can not be absolutely certain that no mistakes were overlooked.
+This project is still in beta and we advise caution - please do not put more into our contracts than you are prepared to lose if a vulnerability is found and exploited. The project is less than a year old and has not received extensive scrutiny an auditing firm specialising in smart contracts.
